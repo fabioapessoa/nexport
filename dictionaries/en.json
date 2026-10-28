@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Nexport Global C.A. : International Representation and Distribution in Venezuela",
+    "description": "We represent and distribute international brands of agricultural, industrial, and transport equipment in the Venezuelan market."
+  },
+  "skipToContent": "Skip to content",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "group": "Our Group",
+    "divisions": "Divisions",
+    "divisionsMobilityDesc": "Heavy transport and fleets",
+    "divisionsAgrotechDesc": "Agricultural equipment",
+    "divisionsLineaAmarillaDesc": "Construction machinery",
+    "howWeWork": "How We Work",
+    "partnerships": "International Partnerships",
+    "presence": "Presence",
+    "contact": "Contact",
+    "ctaContact": "Talk to Nexport",
+    "langLabel": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuLabel": "Menu"
+  },
+  "hero": {
+    "eyebrow": "Nexport Global C.A. · Venezuela",
+    "title": "We represent international brands in the Venezuelan market.",
+    "subtitle": "Import, distribution, and business development for agricultural, industrial, and transport equipment in Venezuela.",
+    "ctaPrimary": "Talk to Nexport",
+    "ctaSecondary": "See our divisions",
+    "imageNote": "Illustrative photograph"
+  },
+  "about": {
+    "eyebrow": "Nexport Global C.A.",
+    "title": "Connecting international manufacturers with opportunities in Venezuela.",
+    "body": "We represent international brands before Venezuelan business buyers. We build their commercial presence, manage the import and distribution of their equipment, and support their relationship with the local market across three sectors: agricultural, industrial, and transport.",
+    "point1": {
+      "title": "Commercial representation",
+      "text": "We build the presence of international manufacturers before Venezuelan buyers."
+    },
+    "point2": {
+      "title": "Import and distribution",
+      "text": "We manage the import and distribution of equipment for the sectors we serve."
+    },
+    "point3": {
+      "title": "Local market expertise",
+      "text": "We understand the Venezuelan business buyer and build lasting commercial relationships."
+    },
+    "cta": "See our divisions"
+  },
+  "divisions": {
+    "eyebrow": "Our Divisions",
+    "title": "Three divisions. One market of opportunity.",
+    "intro": "Each division serves a strategic sector of the Venezuelan market, with a specialized focus and internationally recognized equipment.",
+    "mobility": {
+      "title": "Nexport Mobility",
+      "text": "Heavy transport, commercial trucks, and fleet solutions for businesses.",
+      "cta": "Explore Mobility",
+      "imageNote": "Illustrative photograph"
+    },
+    "agrotech": {
+      "title": "Nexport Agrotech",
+      "text": "Agricultural machinery, irrigation, and technology for the field.",
+      "cta": "Explore Agrotech",
+      "imageNote": "Illustrative photograph"
+    },
+    "lineaAmarilla": {
+      "title": "Línea Amarilla",
+      "text": "Heavy machinery for construction and infrastructure.",
+      "cta": "Explore Línea Amarilla",
+      "imageNote": "Illustrative photograph"
+    }
+  },
+  "howWeWork": {
+    "eyebrow": "How We Work",
+    "title": "Three fronts. One commercial commitment.",
+    "intro": "This is how we manage the relationship between international manufacturers and the Venezuelan market.",
+    "step1": {
+      "number": "01",
+      "title": "Representation",
+      "text": "We represent international manufacturers before the Venezuelan business buyer, building their presence in the country."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Import and distribution",
+      "text": "We manage the import and distribution of equipment for the agricultural, industrial, and transport sectors."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Commercial relationship and after-sales",
+      "text": "We build long-term relationships and support our clients through every stage of the commercial operation."
+    }
+  },
+  "partnerships": {
+    "eyebrow": "International Partnerships",
+    "title": "Your next market can start in Venezuela.",
+    "body": "If you represent an international brand of agricultural, industrial, or transport equipment, Nexport offers the market knowledge and the commercial relationships needed to build your presence in the country.",
+    "point1": "Direct knowledge of the Venezuelan business buyer and their needs.",
+    "point2": "Direct commercial relationships with companies in the sectors we serve.",
+    "point3": "Backed by a business group with an operating history in Venezuela.",
+    "cta": "Explore a commercial partnership",
+    "graphicCaption": "Venezuela · International market",
+    "imageNote": "Illustrative photograph"
+  },
+  "group": {
+    "eyebrow": "Our Business Group",
+    "title": "Backed by a group with a track record in Venezuela.",
+    "body": "Nexport Global C.A. and Agropecuaria OuroBranco C.A. belong to the same Venezuelan business group. OuroBranco has roughly 30 years of experience in Venezuela's agribusiness sector, giving Nexport real institutional backing.",
+    "clarification": "Nexport Global C.A. is the group's representation and distribution division. The agribusiness track record belongs to OuroBranco's operation, not to Nexport as a legal entity.",
+    "stat1": { "value": "~30", "label": "years of the group's track record in Venezuela" },
+    "stat2": { "value": "3", "label": "equipment sectors represented" },
+    "stat3": { "value": "VE", "label": "operation based in Venezuela" },
+    "cta": "Talk to Nexport"
+  },
+  "presence": {
+    "eyebrow": "Presence and Connections",
+    "title": "Based in Venezuela, connected with the world.",
+    "body": "Nexport Global C.A. is based in Venezuela. We build commercial relationships with international manufacturers interested in the Venezuelan market; we do not operate offices or subsidiaries abroad.",
+    "venezuelaLabel": "Primary market",
+    "venezuelaValue": "Venezuela",
+    "internationalLabel": "Commercial relationship",
+    "internationalValue": "International manufacturers"
+  },
+  "finalCta": {
+    "eyebrow": "Let's talk",
+    "title": "Let's talk about your next project in Venezuela.",
+    "subtitle": "Tell us your profile and our team will get in touch.",
+    "manufacturerLabel": "I'm a manufacturer",
+    "manufacturerText": "Looking for representation and distribution in Venezuela.",
+    "buyerLabel": "Looking for equipment",
+    "buyerText": "I need agricultural, industrial, or transport equipment."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Tell us about your project.",
+    "subtitle": "Complete the form and our team will get in touch with you.",
+    "form": {
+      "name": "Full name",
+      "company": "Company",
+      "email": "Email address",
+      "country": "Country",
+      "profile": "Profile",
+      "profileManufacturer": "International manufacturer",
+      "profileBuyer": "Business buyer",
+      "profileOther": "Other",
+      "division": "Division of interest",
+      "divisionPlaceholder": "Select a division (optional)",
+      "divisionMobility": "Nexport Mobility",
+      "divisionAgrotech": "Nexport Agrotech",
+      "divisionLineaAmarilla": "Línea Amarilla",
+      "message": "Message",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "requiredError": "This field is required.",
+      "emailError": "Enter a valid email address.",
+      "pendingNotice": "This form validates data in the browser. Actual delivery to our team will be enabled in a later phase of the project, once the integration is defined.",
+      "successNotice": "Data validated successfully. Since actual delivery is not yet configured, your message was not sent. Please contact us directly in the meantime."
+    }
+  },
+  "footer": {
+    "description": "We represent and distribute international brands of agricultural, industrial, and transport equipment in Venezuela.",
+    "navTitle": "Navigation",
+    "divisionsTitle": "Divisions",
+    "languageTitle": "Language",
+    "legalName": "Nexport Global C.A.",
+    "rights": "All rights reserved."
+  }
+}
