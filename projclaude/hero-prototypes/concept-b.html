@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nexport Global C.A. — Concepto B: Global Business</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0E14; --graphite:#161B22; --steel:#3D4450;
+    --gold:#C9A24B; --bronze:#8C6A2F; --porcelain:#F6F4EF;
+  }
+  body{font-family:'Inter',sans-serif;background:var(--ink);}
+  .font-display{font-family:'Fraunces',serif;}
+  .gold-grad{background:linear-gradient(135deg,var(--gold),var(--bronze));}
+  .photo-panel{
+    background-image: linear-gradient(0deg, rgba(11,14,20,0.35), rgba(11,14,20,0)), url('https://images.unsplash.com/photo-1606739211185-2c846d734a6d?auto=format&fit=crop&w=2000&q=80');
+    background-size:cover; background-position:center;
+  }
+  .header-solid{backdrop-filter:blur(10px); background:rgba(11,14,20,0.9); border-bottom:1px solid rgba(246,244,239,0.08);}
+  .nav-link{font-size:13px; letter-spacing:.04em; color:rgba(246,244,239,.85); transition:color .2s;}
+  .nav-link:hover{color:var(--gold);}
+  .dropdown{opacity:0; visibility:hidden; transform:translateY(8px); transition:all .2s ease;}
+  .group\/nav:hover .dropdown{opacity:1; visibility:visible; transform:translateY(0);}
+  #mobileMenu{transform:translateX(100%); transition:transform .35s cubic-bezier(.16,1,.3,1);}
+  #mobileMenu.open{transform:translateX(0);}
+  .seam-line{
+    position:absolute; top:0; bottom:0; left:0; width:1px;
+    background:linear-gradient(180deg, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+  }
+  .node{width:6px;height:6px;border-radius:999px;background:var(--gold);}
+  .badge-note{font-size:10px; letter-spacing:.08em;}
+</style>
+</head>
+<body class="text-[color:var(--porcelain)]">
+
+  <header id="siteHeader" class="fixed inset-x-0 top-0 z-50 header-solid">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20 lg:h-24">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 lg:w-12 lg:h-12 rounded-full gold-grad flex items-center justify-center font-display font-semibold text-[color:var(--ink)] text-lg">NG</div>
+        <div class="leading-tight">
+          <div class="font-display font-semibold text-lg lg:text-xl tracking-wide">NEXPORT</div>
+          <div class="text-[10px] tracking-[0.25em] text-[color:var(--gold)]">GLOBAL C.A.</div>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9">
+        <a href="#" class="nav-link">Nosotros</a>
+        <div class="relative group/nav">
+          <button class="nav-link flex items-center gap-1">Divisiones
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <div class="dropdown absolute top-full left-1/2 -translate-x-1/2 pt-4 w-72">
+            <div class="bg-[color:var(--graphite)] border border-white/10 rounded-xl p-2 shadow-2xl">
+              <a href="#" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition">
+                <div class="text-sm font-medium">Nexport Mobility</div>
+                <div class="text-xs text-white/50 mt-0.5">Transporte pesado y flotas</div>
+              </a>
+              <a href="#" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition">
+                <div class="text-sm font-medium">Nexport Agrotech</div>
+                <div class="text-xs text-white/50 mt-0.5">Equipamiento agrícola</div>
+              </a>
+              <a href="#" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition">
+                <div class="text-sm font-medium">Línea Amarilla</div>
+                <div class="text-xs text-white/50 mt-0.5">Maquinaria de construcción</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Alianzas Internacionales</a>
+        <a href="#" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <div class="flex items-center gap-1.5 text-[12px] font-semibold text-white/60">
+          <button class="px-1 text-[color:var(--gold)]">ES</button><span class="text-white/25">/</span>
+          <button class="px-1 hover:text-white">EN</button><span class="text-white/25">/</span>
+          <button class="px-1 hover:text-white">PT</button>
+        </div>
+        <a href="#" class="gold-grad text-[color:var(--ink)] text-[13px] font-semibold px-6 py-2.5 rounded-full hover:scale-[1.03] transition-transform">Hable con Nexport</a>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
+        <span class="w-6 h-px bg-white"></span><span class="w-6 h-px bg-white"></span><span class="w-6 h-px bg-white"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="fixed inset-0 z-[60] bg-[color:var(--ink)] lg:hidden">
+    <div class="flex items-center justify-between h-20 px-6 border-b border-white/10">
+      <div class="font-display font-semibold text-lg">NEXPORT</div>
+      <button id="closeMenuBtn" class="w-10 h-10 flex items-center justify-center text-2xl">✕</button>
+    </div>
+    <nav class="flex flex-col items-start gap-7 px-8 pt-12">
+      <a href="#" class="font-display text-2xl">Nosotros</a>
+      <a href="#" class="font-display text-2xl">Divisiones</a>
+      <a href="#" class="font-display text-2xl">Alianzas Internacionales</a>
+      <a href="#" class="font-display text-2xl">Contacto</a>
+      <a href="#" class="gold-grad text-[color:var(--ink)] text-sm font-semibold px-7 py-3 rounded-full mt-4">Hable con Nexport</a>
+    </nav>
+  </div>
+
+  <section class="relative min-h-[100svh] flex flex-col lg:flex-row">
+    <div class="relative flex-1 lg:w-[55%] flex items-center px-6 lg:px-14 pt-32 pb-16 lg:pt-0 lg:pb-0 bg-[color:var(--ink)]">
+      <div class="max-w-xl">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-8 h-px bg-[color:var(--gold)]"></span>
+          <span class="text-[12px] tracking-[0.2em] text-[color:var(--gold)] font-semibold">NEXPORT GLOBAL C.A. · VENEZUELA</span>
+        </div>
+        <h1 class="font-display font-semibold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] mb-6">
+          Representamos marcas internacionales en el mercado venezolano.
+        </h1>
+        <p class="text-base lg:text-lg text-white/70 mb-10 leading-relaxed">
+          Importación, distribución y desarrollo de negocios para equipamiento agrícola, industrial y de transporte en Venezuela.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="gold-grad text-[color:var(--ink)] text-[13px] font-semibold px-8 py-4 rounded-full text-center">Hable con Nexport</a>
+          <a href="#" class="border border-white/30 text-[13px] font-semibold px-8 py-4 rounded-full text-center hover:border-[color:var(--gold)] hover:text-[color:var(--gold)] transition-colors">Conozca nuestras divisiones</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative lg:w-[45%] min-h-[48vh] lg:min-h-0 photo-panel">
+      <div class="seam-line hidden lg:block"></div>
+      <div class="hidden lg:block absolute top-1/2 -left-1.5 -translate-y-1/2">
+        <div class="node"></div>
+      </div>
+      <div class="absolute bottom-5 right-5 badge-note text-white/70 bg-black/30 px-2 py-1 rounded">Fotografía ilustrativa · Unsplash</div>
+    </div>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    closeBtn.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  </script>
+</body>
+</html>

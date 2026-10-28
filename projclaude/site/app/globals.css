@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0b0e14;
+  --color-graphite: #161b22;
+  --color-graphite-soft: #1b2029;
+  --color-steel: #3d4450;
+  --color-gold: #c9a24b;
+  --color-bronze: #8c6a2f;
+  --color-porcelain: #f6f4ef;
+  --color-offwhite: #f5f3ee;
+  --color-paper: #ffffff;
+  --color-muted: #9aa1ab;
+  --color-line: rgba(245, 243, 238, 0.12);
+  --color-line-soft: rgba(11, 14, 20, 0.1);
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-graphite: var(--color-graphite);
+  --color-graphite-soft: var(--color-graphite-soft);
+  --color-steel: var(--color-steel);
+  --color-gold: var(--color-gold);
+  --color-bronze: var(--color-bronze);
+  --color-porcelain: var(--color-porcelain);
+  --color-offwhite: var(--color-offwhite);
+  --color-paper: var(--color-paper);
+  --color-muted: var(--color-muted);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-porcelain);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* Reveal-on-scroll: elements start hidden, JS adds .is-visible via IntersectionObserver */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Visible focus states for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
