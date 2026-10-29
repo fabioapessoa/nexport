@@ -1,5 +1,6 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
 import GroupExperienceVideo from "@/components/GroupExperienceVideo";
+import OperationsGallery, { type GalleryItem } from "@/components/OperationsGallery";
 import type { Dictionary } from "@/lib/dictionaries";
 
 export default function GroupExperience({
@@ -8,6 +9,54 @@ export default function GroupExperience({
   group: Dictionary["group"];
 }) {
   const stats = [group.stat1, group.stat2, group.stat3];
+  const gallery = group.gallery;
+
+  const galleryItems: GalleryItem[] = [
+    {
+      type: "video",
+      src: "/media/gallery-agroindustrial-facility.mp4",
+      poster: "/media/gallery-agroindustrial-facility-poster.jpg",
+      alt: gallery.facility,
+      width: 1024,
+      height: 576,
+      span: "sm:col-span-2 sm:row-span-2",
+    },
+    {
+      type: "video",
+      src: "/media/gallery-silos-aerial.mp4",
+      poster: "/media/gallery-silos-aerial-poster.jpg",
+      alt: gallery.silosAerial,
+      width: 1024,
+      height: 576,
+      span: "sm:col-start-3 sm:row-start-1",
+    },
+    {
+      type: "video",
+      src: "/media/gallery-harvest-combine.mp4",
+      poster: "/media/gallery-harvest-combine-poster.jpg",
+      alt: gallery.harvest,
+      width: 1024,
+      height: 576,
+      span: "sm:col-start-3 sm:row-start-2",
+    },
+    {
+      type: "photo",
+      src: "/media/gallery-silos-photo.jpg",
+      alt: gallery.silosPhoto,
+      width: 880,
+      height: 720,
+      span: "sm:col-span-2 sm:row-start-3",
+    },
+    {
+      type: "video",
+      src: "/media/gallery-ourobranco-operations.mp4",
+      poster: "/media/gallery-ourobranco-operations-poster.jpg",
+      alt: gallery.fleet,
+      width: 1024,
+      height: 576,
+      span: "sm:col-start-3 sm:row-start-3",
+    },
+  ];
 
   return (
     <section id="nuestro-grupo" className="bg-paper py-24 sm:py-32">
@@ -59,6 +108,27 @@ export default function GroupExperience({
             </div>
           </RevealOnScroll>
         </div>
+
+        <RevealOnScroll delay={200} className="mt-20 sm:mt-24">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="mb-3 text-[13px] font-semibold uppercase tracking-[0.22em] text-bronze">
+              {gallery.title}
+            </p>
+            <h3 className="font-display text-2xl font-semibold leading-tight text-ink sm:text-3xl">
+              {gallery.subtitle}
+            </h3>
+          </div>
+
+          <div className="mt-10">
+            <OperationsGallery
+              items={galleryItems}
+              caption={gallery.caption}
+              openLabel={gallery.openLabel}
+              playLabel={gallery.playLabel}
+              closeLabel={gallery.closeLabel}
+            />
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   );
