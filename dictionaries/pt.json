@@ -44,22 +44,22 @@
   "experienceAreas": {
     "eyebrow": "Áreas de Experiência",
     "title": "Experiência prática em diferentes frentes empresariais.",
-    "intro": "Nossa experiência empresarial abrange atividades logísticas, importação, distribuição, operações agrícolas, armazenamento de grãos, infraestrutura de silos, sistemas de irrigação e o setor petrolífero. O conhecimento acumulado nessas áreas faz parte do respaldo do nosso grupo empresarial e da nossa compreensão das necessidades do mercado venezuelano.",
+    "intro": "Nossa experiência empresarial abrange atividades logísticas, importação, distribuição, operações agrícolas, infraestrutura de silos, sistemas de irrigação e o setor petrolífero. O conhecimento acumulado nessas áreas faz parte do respaldo do nosso grupo empresarial e da nossa compreensão das necessidades do mercado venezuelano.",
     "logistics": {
       "title": "Logística, Importação e Distribuição",
-      "text": "Movimentação de equipamentos e mercadorias, trâmites de importação e distribuição dentro do mercado venezuelano."
+      "text": "Domínio integral da cadeia logística internacional e nacional. Contamos com profundo conhecimento interno das leis venezuelanas, do sistema tributário e dos mecanismos aduaneiros, o que nos permite otimizar tarifas e maximizar a eficiência fiscal em cada operação. Além disso, dispomos de hubs e sólida experiência em logística internacional a partir dos Estados Unidos e do Brasil, projetados para reduzir ao mínimo os custos operacionais externos e internos, respaldados por uma rede de parceiros estratégicos no território nacional para uma distribuição ágil e segura de ponta a ponta."
     },
     "agriculture": {
       "title": "Atividades Agrícolas e Armazenamento",
-      "text": "Operações em campo e gestão de infraestrutura de armazenamento de grãos e silos."
+      "text": "Mais de três décadas de experiência prática e know-how direto no campo venezuelano. Desenvolvemos operações agrícolas intensivas com tecnologia de ponta em plantio e manejo de cultivos, respaldadas por uma infraestrutura própria e robusta de silos para garantir a eficiência da cadeia agroindustrial."
     },
     "irrigation": {
       "title": "Sistemas de Irrigação",
-      "text": "Experiência prática no uso e na gestão de sistemas de irrigação agrícola."
+      "text": "Liderança indiscutível em engenharia hídrica aplicada ao agronegócio. Contamos com experiência comprovada no projeto, instalação e gestão de sistemas de irrigação em grande escala, com destaque para a operação e manutenção de infraestrutura de alta complexidade, como o pivô de irrigação linear mais extenso da América do Sul, com 300 hectares de extensão."
     },
     "oil": {
       "title": "Setor Petrolífero",
-      "text": "Conhecimento de atividades vinculadas ao setor petrolífero venezuelano."
+      "text": "Sólido respaldo logístico e industrial para a reativação do setor petrolífero na Venezuela. Oferecemos soluções estratégicas por meio da locação e fornecimento de equipamentos pesados, maquinário e suporte operacional, adaptados às altas exigências do setor nesta nova etapa de reativação."
     }
   },
   "howWeWork": {
@@ -85,7 +85,7 @@
   "group": {
     "eyebrow": "Nosso Grupo Empresarial",
     "title": "O respaldo do nosso grupo empresarial.",
-    "body": "Fazemos parte de um grupo empresarial com aproximadamente 30 anos de trajetória na Venezuela e experiência em diferentes atividades produtivas e comerciais. Ao longo dessa trajetória, o grupo desenvolveu conhecimento e experiência em logística, importação, distribuição, agricultura, armazenamento de grãos, infraestrutura de silos, sistemas de irrigação e atividades vinculadas ao setor petrolífero. Essa experiência constitui um respaldo institucional que fortalece nossa visão de negócios e nosso conhecimento do ambiente empresarial venezuelano.",
+    "body": "Fazemos parte de um grupo empresarial com aproximadamente 30 anos de trajetória na Venezuela e experiência em diferentes atividades produtivas e comerciais. Ao longo dessa trajetória, o grupo desenvolveu conhecimento e experiência em logística, importação, distribuição, agricultura, infraestrutura de silos, sistemas de irrigação e atividades vinculadas ao setor petrolífero. Essa experiência constitui um respaldo institucional que fortalece nossa visão de negócios e nosso conhecimento do ambiente empresarial venezuelano.",
     "stat1": { "value": "~30", "label": "anos de trajetória do grupo na Venezuela" },
     "stat2": { "value": "VE", "label": "operação com base na Venezuela" }
   },

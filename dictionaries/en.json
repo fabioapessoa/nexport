@@ -44,22 +44,22 @@
   "experienceAreas": {
     "eyebrow": "Areas of Expertise",
     "title": "Practical experience across multiple business fronts.",
-    "intro": "Our business experience spans logistics, import, distribution, agricultural operations, grain storage, silo infrastructure, irrigation systems, and the oil sector. The knowledge built across these areas is part of our business group's backing and our understanding of the Venezuelan market's needs.",
+    "intro": "Our business experience spans logistics, import, distribution, agricultural operations, silo infrastructure, irrigation systems, and the oil sector. The knowledge built across these areas is part of our business group's backing and our understanding of the Venezuelan market's needs.",
     "logistics": {
       "title": "Logistics, Import, and Distribution",
-      "text": "Moving equipment and goods, import procedures, and distribution within the Venezuelan market."
+      "text": "Full command of the international and domestic logistics chain. We hold deep internal knowledge of Venezuelan law, the tax system, and customs mechanisms, allowing us to optimize tariffs and maximize fiscal efficiency in every operation. We also maintain hubs and solid international logistics experience from the United States and Brazil, designed to minimize external and internal operating costs, backed by a network of strategic partners within the country for agile, secure end to end distribution."
     },
     "agriculture": {
       "title": "Agricultural Operations and Storage",
-      "text": "Field operations and management of grain storage and silo infrastructure."
+      "text": "More than three decades of hands on experience and direct know-how in the Venezuelan countryside. We run intensive agricultural operations with advanced planting and crop management technology, backed by our own robust silo infrastructure to ensure efficiency across the agro-industrial chain."
     },
     "irrigation": {
       "title": "Irrigation Systems",
-      "text": "Practical experience in the use and management of agricultural irrigation systems."
+      "text": "Undisputed leadership in hydraulic engineering applied to agriculture. We bring proven experience in the design, installation, and management of large scale irrigation systems, including the operation and upkeep of highly complex infrastructure such as South America's largest linear irrigation pivot, spanning 300 hectares."
     },
     "oil": {
       "title": "Oil Sector",
-      "text": "Knowledge of activities connected to Venezuela's oil sector."
+      "text": "Solid logistical and industrial backing for the reactivation of Venezuela's oil sector. We offer strategic solutions through the rental and supply of heavy equipment, machinery, and operational support, tailored to the sector's demanding requirements in this new stage of reactivation."
     }
   },
   "howWeWork": {
@@ -85,7 +85,7 @@
   "group": {
     "eyebrow": "Our Business Group",
     "title": "The backing of our business group.",
-    "body": "We are part of a business group with roughly 30 years of track record in Venezuela and experience across different productive and commercial activities. Over this track record, the group has built knowledge and experience in logistics, import, distribution, agriculture, grain storage, silo infrastructure, irrigation systems, and activities connected to the oil sector. This experience represents institutional backing that strengthens our business vision and our understanding of the Venezuelan business environment.",
+    "body": "We are part of a business group with roughly 30 years of track record in Venezuela and experience across different productive and commercial activities. Over this track record, the group has built knowledge and experience in logistics, import, distribution, agriculture, silo infrastructure, irrigation systems, and activities connected to the oil sector. This experience represents institutional backing that strengthens our business vision and our understanding of the Venezuelan business environment.",
     "stat1": { "value": "~30", "label": "years of the group's track record in Venezuela" },
     "stat2": { "value": "VE", "label": "operation based in Venezuela" }
   },

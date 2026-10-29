@@ -44,22 +44,22 @@
   "experienceAreas": {
     "eyebrow": "Áreas de Experiencia",
     "title": "Experiencia práctica en distintos frentes empresariales.",
-    "intro": "Nuestra experiencia empresarial abarca actividades logísticas, importación, distribución, operaciones agrícolas, almacenamiento de granos, infraestructura de silos, sistemas de riego y el sector petrolero. El conocimiento acumulado en estas áreas forma parte del respaldo de nuestro grupo empresarial y de nuestra comprensión de las necesidades del mercado venezolano.",
+    "intro": "Nuestra experiencia empresarial abarca actividades logísticas, importación, distribución, operaciones agrícolas, infraestructura de silos, sistemas de riego y el sector petrolero. El conocimiento acumulado en estas áreas forma parte del respaldo de nuestro grupo empresarial y de nuestra comprensión de las necesidades del mercado venezolano.",
     "logistics": {
       "title": "Logística, Importación y Distribución",
-      "text": "Movilización de equipos y mercancías, trámites de importación y distribución dentro del mercado venezolano."
+      "text": "Dominio integral de la cadena logística internacional y nacional. Contamos con un profundo conocimiento interno de las leyes venezolanas, el sistema tributario y los mecanismos aduaneros, lo que nos permite optimizar aranceles y maximizar la eficiencia fiscal en cada operación. Asimismo, disponemos de hubs y sólida experiencia en logística internacional desde Estados Unidos y Brasil, diseñados para reducir al mínimo los costos operativos externos e internos, respaldados por una red de socios estratégicos en el territorio nacional para una distribución ágil y segura de punta a punta."
     },
     "agriculture": {
       "title": "Actividades Agrícolas y Almacenamiento",
-      "text": "Operaciones en campo y manejo de infraestructura de almacenamiento de granos y silos."
+      "text": "Más de tres décadas de experiencia práctica y know-how directo en el campo venezolano. Desarrollamos operaciones agrícolas intensivas con tecnología de punta en siembra y manejo de cultivos, respaldadas por una infraestructura propia y robusta de silos para garantizar la eficiencia de la cadena agroindustrial."
     },
     "irrigation": {
       "title": "Sistemas de Riego",
-      "text": "Experiencia práctica en el uso y manejo de sistemas de riego agrícola."
+      "text": "Liderazgo indiscutible en ingeniería hídrica aplicada al agro. Contamos con experiencia comprobada en el diseño, instalación y gestión de sistemas de riego a gran escala, destacando la operación y manejo de infraestructura de alta complejidad como el pivote de riego linear más grande de Sudamérica, con una extensión de 300 hectáreas."
     },
     "oil": {
       "title": "Sector Petrolero",
-      "text": "Conocimiento de actividades vinculadas al sector petrolero venezolano."
+      "text": "Sólido respaldo logístico e industrial para la reactivación del sector petrolero en Venezuela. Ofrecemos soluciones estratégicas mediante el alquiler y suministro de equipos pesados, maquinaria y soporte operativo adaptados a las altas exigencias de la industria en esta nueva etapa de reactivación."
     }
   },
   "howWeWork": {
@@ -85,7 +85,7 @@
   "group": {
     "eyebrow": "Nuestro Grupo Empresarial",
     "title": "El respaldo de nuestro grupo empresarial.",
-    "body": "Formamos parte de un grupo empresarial con aproximadamente 30 años de trayectoria en Venezuela y experiencia en diferentes actividades productivas y comerciales. A lo largo de esta trayectoria, el grupo ha desarrollado conocimiento y experiencia en logística, importación, distribución, agricultura, almacenamiento de granos, infraestructura de silos, sistemas de riego y actividades vinculadas al sector petrolero. Esta experiencia constituye un respaldo institucional que fortalece nuestra visión de negocios y nuestro conocimiento del entorno empresarial venezolano.",
+    "body": "Formamos parte de un grupo empresarial con aproximadamente 30 años de trayectoria en Venezuela y experiencia en diferentes actividades productivas y comerciales. A lo largo de esta trayectoria, el grupo ha desarrollado conocimiento y experiencia en logística, importación, distribución, agricultura, infraestructura de silos, sistemas de riego y actividades vinculadas al sector petrolero. Esta experiencia constituye un respaldo institucional que fortalece nuestra visión de negocios y nuestro conocimiento del entorno empresarial venezolano.",
     "stat1": { "value": "~30", "label": "años de trayectoria del grupo en Venezuela" },
     "stat2": { "value": "VE", "label": "operación con base en Venezuela" }
   },
