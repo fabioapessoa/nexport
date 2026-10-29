@@ -1,20 +1,15 @@
 {
   "meta": {
-    "title": "Nexport Global C.A. : International Representation and Distribution in Venezuela",
-    "description": "We represent and distribute international brands of agricultural, industrial, and transport equipment in the Venezuelan market."
+    "title": "Nexport Global C.A. : International Vision, Business Backing in Venezuela",
+    "description": "A Venezuelan company with an international outlook, backed by a business group with real operating experience in the country."
   },
   "skipToContent": "Skip to content",
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "Who We Are",
     "group": "Our Group",
-    "divisions": "Divisions",
-    "divisionsMobilityDesc": "Heavy transport and fleets",
-    "divisionsAgrotechDesc": "Agricultural equipment",
-    "divisionsLineaAmarillaDesc": "Construction machinery",
-    "howWeWork": "Business Vision",
-    "partnerships": "International Outlook",
-    "presence": "Presence",
+    "experienceAreas": "Areas of Expertise",
+    "gallery": "Gallery",
     "contact": "Contact",
     "ctaContact": "Talk to Nexport",
     "langLabel": "Language",
@@ -24,19 +19,17 @@
   },
   "hero": {
     "eyebrow": "Nexport Global C.A. · Venezuela",
-    "title": "Global vision. Committed to Venezuela.",
-    "subtitle": "A Venezuelan company with an international outlook, focused on developing opportunities in heavy transport, agricultural technology, and infrastructure, backed by a business group with a track record in the country.",
-    "ctaPrimary": "Talk to Nexport",
-    "ctaSecondary": "See our divisions",
+    "title": "Experience that backs us. Vision that drives us.",
+    "subtitle": "Nexport Global C.A. is a Venezuelan company with an international outlook, backed by a business group with roughly 30 years of experience in the country.",
     "imageNote": "Illustrative photograph"
   },
   "about": {
     "eyebrow": "Nexport Global C.A.",
     "title": "A Venezuelan company with an international outlook.",
-    "body": "Nexport Global C.A. is a Venezuelan company with an international outlook, focused on developing business opportunities in strategic sectors of the economy. Our identity is built on a deep understanding of the Venezuelan environment, a long term perspective, and the backing of a business group with real experience in productive and logistical activities in the country. We believe in commercial relationships built on seriousness, market knowledge, and a commitment to the sustainable development of new opportunities.",
+    "body": "Nexport Global C.A. is a Venezuelan company with an international outlook, focused on developing business opportunities and strengthening long term commercial relationships. Our identity is backed by the experience of a business group with a track record of roughly 30 years in Venezuela, with practical knowledge of productive, commercial, and logistical activities. This experience allows us to understand the particularities of the Venezuelan market and approach new projects with a solid, responsible, and forward looking business perspective.",
     "point1": {
       "title": "International outlook",
-      "text": "We follow the evolution of the transport, agribusiness, and infrastructure sectors on a global scale."
+      "text": "We follow the evolution of productive sectors on a global scale."
     },
     "point2": {
       "title": "Knowledge of the Venezuelan market",
@@ -46,110 +39,85 @@
       "title": "Group backing",
       "text": "We are part of a business group with real operating experience in Venezuela."
     },
-    "cta": "See our divisions"
+    "cta": "See our areas of expertise"
   },
-  "divisions": {
-    "eyebrow": "Our Divisions",
-    "title": "Three divisions. One market of opportunity.",
-    "intro": "Each division represents a strategic area of business interest and development within the Venezuelan market.",
-    "mobility": {
-      "title": "Nexport Mobility",
-      "text": "Heavy transport, commercial fleets, and solutions for large scale mobility and logistics needs.",
-      "cta": "Explore Mobility",
-      "imageNote": "Illustrative photograph"
+  "experienceAreas": {
+    "eyebrow": "Areas of Expertise",
+    "title": "Practical experience across multiple business fronts.",
+    "intro": "Our business experience spans logistics, import, distribution, agricultural operations, grain storage, silo infrastructure, irrigation systems, and the oil sector. The knowledge built across these areas is part of our business group's backing and our understanding of the Venezuelan market's needs.",
+    "logistics": {
+      "title": "Logistics, Import, and Distribution",
+      "text": "Moving equipment and goods, import procedures, and distribution within the Venezuelan market."
     },
-    "agrotech": {
-      "title": "Nexport Agrotech",
-      "text": "Agricultural machinery, irrigation systems, precision agriculture, and technologies aimed at farm sector productivity.",
-      "cta": "Explore Agrotech",
-      "imageNote": "Illustrative photograph"
+    "agriculture": {
+      "title": "Agricultural Operations and Storage",
+      "text": "Field operations and management of grain storage and silo infrastructure."
     },
-    "lineaAmarilla": {
-      "title": "Línea Amarilla",
-      "text": "Heavy machinery, construction equipment, earthmoving, and road and industrial infrastructure.",
-      "cta": "Explore Línea Amarilla",
-      "imageNote": "Illustrative photograph"
+    "irrigation": {
+      "title": "Irrigation Systems",
+      "text": "Practical experience in the use and management of agricultural irrigation systems."
+    },
+    "oil": {
+      "title": "Oil Sector",
+      "text": "Knowledge of activities connected to Venezuela's oil sector."
     }
   },
   "howWeWork": {
     "eyebrow": "Business Vision",
-    "title": "The principles that guide our work.",
-    "intro": "This is how we understand the development of business opportunities in Venezuela.",
+    "title": "Experience that builds trust.",
+    "intro": "This is how we understand the responsible development of business opportunities in Venezuela.",
     "step1": {
       "number": "01",
       "title": "Market knowledge",
-      "text": "An understanding of the Venezuelan business environment and the particularities of its productive sectors."
+      "text": "A practical understanding of the Venezuelan business environment and its different productive sectors."
     },
     "step2": {
       "number": "02",
-      "title": "International outlook",
-      "text": "An interest in technologies, equipment, and solutions that can contribute to the development of our strategic sectors."
+      "title": "Operating experience",
+      "text": "Familiarity with commercial and logistical activities built over our group's track record."
     },
     "step3": {
       "number": "03",
-      "title": "Long term relationships",
-      "text": "A commitment to developing business opportunities grounded in trust, seriousness, and a long term vision."
+      "title": "Responsible relationships",
+      "text": "Attention to the serious and responsible structuring of every new business opportunity."
     }
-  },
-  "partnerships": {
-    "eyebrow": "International Outlook",
-    "title": "Watching global industrial transformation closely.",
-    "body": "We follow the evolution of international industry in transport, agribusiness, and infrastructure. That global outlook guides the development of new business opportunities for Nexport Global C.A. in Venezuela.",
-    "point1": "An interest in innovation and technologies applied to our strategic sectors.",
-    "point2": "Ongoing attention to the transformations shaping global industry.",
-    "point3": "A long term vision for business growth.",
-    "cta": "Let's talk about opportunities",
-    "graphicCaption": "Venezuela · International outlook",
-    "imageNote": "Illustrative photograph"
   },
   "group": {
     "eyebrow": "Our Business Group",
     "title": "The backing of our business group.",
-    "body": "Nexport Global C.A. is part of a business group with a track record of roughly 30 years in Venezuela. Within the group, Agropecuaria OuroBranco C.A. has built real operating experience in agricultural activities, grain storage, and logistics infrastructure, consolidating practical knowledge of the Venezuelan productive environment. This experience represents institutional backing for Nexport Global C.A.'s business vision.",
-    "clarification": "Nexport Global C.A. is the group's company focused on developing international business. The roughly 30 year agribusiness track record belongs to OuroBranco's operation, not to Nexport as a legal entity.",
+    "body": "We are part of a business group with roughly 30 years of track record in Venezuela and experience across different productive and commercial activities. Over this track record, the group has built knowledge and experience in logistics, import, distribution, agriculture, grain storage, silo infrastructure, irrigation systems, and activities connected to the oil sector. This experience represents institutional backing that strengthens our business vision and our understanding of the Venezuelan business environment.",
     "stat1": { "value": "~30", "label": "years of the group's track record in Venezuela" },
-    "stat2": { "value": "3", "label": "strategic sectors of activity" },
-    "stat3": { "value": "VE", "label": "operation based in Venezuela" },
-    "cta": "Talk to Nexport",
-    "gallery": {
-      "title": "Our Group in Action",
-      "subtitle": "Real operating experience in Venezuela.",
-      "caption": "Real operations of Agropecuaria OuroBranco C.A., a company within the same business group as Nexport Global C.A.",
-      "openLabel": "Expand image",
-      "playLabel": "Play video",
-      "closeLabel": "Close",
-      "facility": "The group's agroindustrial infrastructure",
-      "silosAerial": "Aerial view of grain storage facilities",
-      "harvest": "Harvest operation in the field",
-      "silosPhoto": "Grain storage facilities",
-      "fleet": "The group's agricultural machinery fleet"
+    "stat2": { "value": "VE", "label": "operation based in Venezuela" }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Operations Gallery",
+    "subtitle": "Real experience from our business group in Venezuela.",
+    "intro": "Real photographs and videos of our business group's activities in Venezuela, across logistics, agriculture, storage, and irrigation.",
+    "caption": "Real images and videos of our business group's activities in Venezuela.",
+    "backLabel": "Back to home",
+    "openLabel": "Expand image",
+    "playLabel": "Play video",
+    "closeLabel": "Close",
+    "items": {
+      "logisticsMaersk": "Loading agricultural machinery at port, alongside international containers",
+      "logisticsTruck": "Road transport of agricultural machinery",
+      "logisticsCrane": "Night loading of machinery for maritime transport",
+      "logisticsGrainload": "Grain transfer during harvest",
+      "agricultureFleet": "Mechanized harvest in formation",
+      "agricultureCropduster": "Aerial crop application",
+      "agricultureSoyfield": "Soybean field ready for harvest",
+      "agricultureCotton": "Mechanized cotton harvest",
+      "storageFacility": "Grain storage facilities",
+      "storageAerial": "Aerial view of silo infrastructure",
+      "irrigationCanal": "Irrigation canal in operation",
+      "irrigationPivot": "Pivot irrigation system at dawn"
     }
-  },
-  "presence": {
-    "eyebrow": "Presence and Connections",
-    "title": "Based in Venezuela, connected with the world.",
-    "body": "Nexport Global C.A. is based in Venezuela. We build commercial relationships with international manufacturers interested in the Venezuelan market; we do not operate offices or subsidiaries abroad.",
-    "venezuelaLabel": "Primary market",
-    "venezuelaValue": "Venezuela",
-    "internationalLabel": "Commercial relationship",
-    "internationalValue": "International manufacturers",
-    "mapEyebrow": "International trade network",
-    "mapLabel": "Venezuela",
-    "mapLegend": "Commercial relationships"
-  },
-  "finalCta": {
-    "eyebrow": "Let's talk",
-    "title": "Let's talk about your next project in Venezuela.",
-    "subtitle": "Tell us your profile and our team will get in touch.",
-    "manufacturerLabel": "I'm a manufacturer",
-    "manufacturerText": "I want to explore business opportunities in Venezuela.",
-    "buyerLabel": "Looking for equipment",
-    "buyerText": "I need agricultural, industrial, or transport equipment."
   },
   "contact": {
     "eyebrow": "Institutional Contact",
     "title": "Let's talk about new opportunities.",
-    "subtitle": "Complete the form and our team will get in touch with you.",
+    "subtitle": "We are open to dialogue and to developing new business opportunities.",
     "form": {
       "name": "Full name",
       "company": "Company",
@@ -159,11 +127,6 @@
       "profileManufacturer": "International manufacturer",
       "profileBuyer": "Business buyer",
       "profileOther": "Other",
-      "division": "Division of interest",
-      "divisionPlaceholder": "Select a division (optional)",
-      "divisionMobility": "Nexport Mobility",
-      "divisionAgrotech": "Nexport Agrotech",
-      "divisionLineaAmarilla": "Línea Amarilla",
       "message": "Message",
       "submit": "Send message",
       "submitting": "Sending…",
@@ -174,9 +137,8 @@
     }
   },
   "footer": {
-    "description": "We represent and distribute international brands of agricultural, industrial, and transport equipment in Venezuela.",
+    "description": "A Venezuelan company with an international outlook, backed by a business group with real operating experience in the country.",
     "navTitle": "Navigation",
-    "divisionsTitle": "Divisions",
     "languageTitle": "Language",
     "legalName": "Nexport Global C.A.",
     "rights": "All rights reserved."

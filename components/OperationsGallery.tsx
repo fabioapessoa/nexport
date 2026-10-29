@@ -19,6 +19,7 @@ type OperationsGalleryProps = {
   openLabel: string;
   playLabel: string;
   closeLabel: string;
+  columns?: 3 | 4;
 };
 
 export default function OperationsGallery({
@@ -27,6 +28,7 @@ export default function OperationsGallery({
   openLabel,
   playLabel,
   closeLabel,
+  columns = 3,
 }: OperationsGalleryProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -39,6 +41,12 @@ export default function OperationsGallery({
 
     function onKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") setActiveIndex(null);
+      if (e.key === "ArrowRight") {
+        setActiveIndex((i) => (i === null ? i : (i + 1) % items.length));
+      }
+      if (e.key === "ArrowLeft") {
+        setActiveIndex((i) => (i === null ? i : (i - 1 + items.length) % items.length));
+      }
     }
 
     document.addEventListener("keydown", onKeyDown);
@@ -46,7 +54,7 @@ export default function OperationsGallery({
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = "";
     };
-  }, [activeIndex]);
+  }, [activeIndex, items.length]);
 
   function close() {
     const returnIndex = activeIndex;
@@ -58,7 +66,13 @@ export default function OperationsGallery({
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:auto-rows-[180px] sm:gap-5 lg:auto-rows-[220px]">
+      <div
+        className={`grid grid-cols-1 gap-4 sm:gap-5 ${
+          columns === 4
+            ? "sm:grid-cols-4 sm:auto-rows-[160px] lg:auto-rows-[200px]"
+            : "sm:grid-cols-3 sm:auto-rows-[180px] lg:auto-rows-[220px]"
+        }`}
+      >
         {items.map((item, i) => (
           <button
             key={item.src}
@@ -77,7 +91,7 @@ export default function OperationsGallery({
               sizes="(min-width: 1024px) 40vw, (min-width: 640px) 33vw, 100vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/55 via-ink/5 to-transparent opacity-70 transition-opacity duration-300 group-hover:opacity-90" />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-95" />
             {item.type === "video" && (
               <span className="absolute inset-0 flex items-center justify-center">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-porcelain/90 text-ink shadow-lg transition-transform duration-300 group-hover:scale-110 sm:h-14 sm:w-14">
@@ -87,6 +101,9 @@ export default function OperationsGallery({
                 </span>
               </span>
             )}
+            <span className="absolute inset-x-0 bottom-0 px-4 py-3 text-left text-[12px] font-medium leading-snug text-offwhite/90 sm:text-[13px]">
+              {item.alt}
+            </span>
           </button>
         ))}
       </div>
@@ -118,8 +135,39 @@ export default function OperationsGallery({
             </svg>
           </button>
 
+          {items.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveIndex((i) => (i === null ? i : (i - 1 + items.length) % items.length));
+                }}
+                aria-label="Previous"
+                className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-offwhite/20 sm:left-6"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M10 2L4 8L10 14" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveIndex((i) => (i === null ? i : (i + 1) % items.length));
+                }}
+                aria-label="Next"
+                className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-offwhite/20 sm:right-6"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 2L12 8L6 14" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </button>
+            </>
+          )}
+
           <div
-            className="relative max-h-full max-w-5xl"
+            className="relative flex max-h-full max-w-5xl flex-col items-center gap-4"
             onClick={(e) => e.stopPropagation()}
           >
             {active.type === "photo" ? (
@@ -128,7 +176,7 @@ export default function OperationsGallery({
                 alt={active.alt}
                 width={active.width}
                 height={active.height}
-                className="h-auto max-h-[85vh] w-auto rounded-xl object-contain"
+                className="h-auto max-h-[75vh] w-auto rounded-xl object-contain"
               />
             ) : (
               <video
@@ -136,10 +184,11 @@ export default function OperationsGallery({
                 poster={active.poster}
                 controls
                 playsInline
-                className="max-h-[85vh] w-auto rounded-xl"
+                className="max-h-[75vh] w-auto rounded-xl"
                 aria-label={active.alt}
               />
             )}
+            <p className="text-center text-sm text-offwhite/80">{active.alt}</p>
           </div>
         </div>
       )}

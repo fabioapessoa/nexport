@@ -3,8 +3,6 @@
 import { useState, useSyncExternalStore, type FormEvent } from "react";
 import type { Dictionary } from "@/lib/dictionaries";
 
-type Division = "mobility" | "agrotech" | "lineaAmarilla" | "";
-
 type Profile = "manufacturer" | "buyer" | "other";
 
 type FormState = {
@@ -24,31 +22,6 @@ const initialState: FormState = {
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-const isValidDivision = (value: string): value is Exclude<Division, ""> =>
-  value === "mobility" || value === "agrotech" || value === "lineaAmarilla";
-
-// The division field is synced from an external source (sessionStorage, written
-// by DivisionCTA on the same page) via useSyncExternalStore rather than an
-// effect + setState, since the homepage never remounts this component between
-// a division card click and landing on the contact form.
-function subscribeToDivision(onStoreChange: () => void) {
-  window.addEventListener("nexport-division-select", onStoreChange);
-  return () => window.removeEventListener("nexport-division-select", onStoreChange);
-}
-
-function getDivisionSnapshot(): Division {
-  try {
-    const stored = window.sessionStorage.getItem("nexport_division");
-    return stored && isValidDivision(stored) ? stored : "";
-  } catch {
-    return "";
-  }
-}
-
-function getDivisionServerSnapshot(): Division {
-  return "";
-}
 
 function subscribeToProfile(onStoreChange: () => void) {
   window.addEventListener("nexport-profile-select", onStoreChange);
@@ -70,16 +43,8 @@ function getProfileServerSnapshot(): Profile {
 
 export default function ContactForm({ form }: { form: Dictionary["contact"]["form"] }) {
   const [values, setValues] = useState<FormState>(initialState);
-  const [errors, setErrors] = useState<Partial<Record<keyof FormState | "division", string>>>({});
+  const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "validated">("idle");
-
-  const suggestedDivision = useSyncExternalStore(
-    subscribeToDivision,
-    getDivisionSnapshot,
-    getDivisionServerSnapshot
-  );
-  const [divisionOverride, setDivisionOverride] = useState<Division | null>(null);
-  const division = divisionOverride ?? suggestedDivision;
 
   const suggestedProfile = useSyncExternalStore(
     subscribeToProfile,
@@ -214,23 +179,6 @@ export default function ContactForm({ form }: { form: Dictionary["contact"]["for
           ))}
         </div>
       </fieldset>
-
-      <div>
-        <label className={labelClass} htmlFor="division">
-          {form.division}
-        </label>
-        <select
-          id="division"
-          className={inputClass}
-          value={division}
-          onChange={(e) => setDivisionOverride(e.target.value as Division)}
-        >
-          <option value="">{form.divisionPlaceholder}</option>
-          <option value="mobility">{form.divisionMobility}</option>
-          <option value="agrotech">{form.divisionAgrotech}</option>
-          <option value="lineaAmarilla">{form.divisionLineaAmarilla}</option>
-        </select>
-      </div>
 
       <div>
         <label className={labelClass} htmlFor="message">

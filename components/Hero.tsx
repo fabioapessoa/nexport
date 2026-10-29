@@ -32,20 +32,6 @@ export default function Hero({ hero }: { hero: Dictionary["hero"] }) {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-ink/65 sm:text-lg">
               {hero.subtitle}
             </p>
-            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="#contacto"
-                className="inline-flex items-center justify-center rounded-full bg-ink px-8 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-offwhite transition-colors hover:bg-graphite"
-              >
-                {hero.ctaPrimary}
-              </a>
-              <a
-                href="#divisiones"
-                className="inline-flex items-center justify-center rounded-full border border-ink/20 px-8 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-ink transition-colors hover:border-bronze hover:text-bronze"
-              >
-                {hero.ctaSecondary}
-              </a>
-            </div>
           </RevealOnScroll>
         </div>
       </div>

@@ -11,28 +11,20 @@ type HeaderProps = {
   nav: Dictionary["nav"];
 };
 
-type DivisionLink = { key: string; href: string; label: string; desc: string };
-
 export default function Header({ locale, nav }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [divisionsOpen, setDivisionsOpen] = useState(false);
 
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
-  const divisionsWrapRef = useRef<HTMLDivElement>(null);
   const wasOpenRef = useRef(false);
 
-  const divisionLinks: DivisionLink[] = [
-    { key: "mobility", href: "#divisiones", label: "Nexport Mobility", desc: nav.divisionsMobilityDesc },
-    { key: "agrotech", href: "#divisiones", label: "Nexport Agrotech", desc: nav.divisionsAgrotechDesc },
-    { key: "lineaAmarilla", href: "#divisiones", label: "Línea Amarilla", desc: nav.divisionsLineaAmarillaDesc },
-  ];
-
   const primaryLinks = [
-    { href: "#nexport", label: nav.about },
-    { href: "#alianzas", label: nav.partnerships },
-    { href: "#contacto", label: nav.contact },
+    { href: `/${locale}#nexport`, label: nav.about },
+    { href: `/${locale}#experiencia`, label: nav.experienceAreas },
+    { href: `/${locale}#nuestro-grupo`, label: nav.group },
+    { href: `/${locale}/galeria`, label: nav.gallery },
+    { href: `/${locale}#contacto`, label: nav.contact },
   ];
 
   useEffect(() => {
@@ -41,27 +33,6 @@ export default function Header({ locale, nav }: HeaderProps) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // Close the divisions dropdown on outside click or Escape.
-  useEffect(() => {
-    if (!divisionsOpen) return;
-
-    function onPointerDown(e: PointerEvent) {
-      if (!divisionsWrapRef.current?.contains(e.target as Node)) {
-        setDivisionsOpen(false);
-      }
-    }
-    function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") setDivisionsOpen(false);
-    }
-
-    document.addEventListener("pointerdown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("pointerdown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [divisionsOpen]);
 
   // Mobile menu: lock scroll, trap focus inside the panel, close on Escape,
   // make background content inert, and return focus to the trigger on close.
@@ -140,50 +111,8 @@ export default function Header({ locale, nav }: HeaderProps) {
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
-          <a
-            href={primaryLinks[0].href}
-            className="text-[13px] font-medium tracking-[0.02em] text-ink/75 transition-colors hover:text-bronze"
-          >
-            {primaryLinks[0].label}
-          </a>
-
-          <div ref={divisionsWrapRef} className="relative">
-            <button
-              type="button"
-              onClick={() => setDivisionsOpen((v) => !v)}
-              aria-expanded={divisionsOpen}
-              aria-haspopup="true"
-              className="flex items-center gap-1.5 text-[13px] font-medium tracking-[0.02em] text-ink/75 transition-colors hover:text-bronze"
-            >
-              {nav.divisions}
-              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" />
-              </svg>
-            </button>
-
-            <div
-              className={`absolute left-1/2 top-full w-72 -translate-x-1/2 pt-4 transition-all duration-200 ${
-                divisionsOpen ? "opacity-100" : "pointer-events-none opacity-0"
-              }`}
-            >
-              <div className="rounded-xl border border-ink/10 bg-paper p-2 shadow-2xl">
-                {divisionLinks.map((d) => (
-                  <a
-                    key={d.key}
-                    href={d.href}
-                    onClick={() => setDivisionsOpen(false)}
-                    className="block rounded-lg px-4 py-3 transition-colors hover:bg-porcelain"
-                  >
-                    <span className="block text-sm font-medium text-ink">{d.label}</span>
-                    <span className="mt-0.5 block text-xs text-ink/50">{d.desc}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {primaryLinks.slice(1).map((link) => (
+        <nav className="hidden items-center gap-7 lg:flex">
+          {primaryLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -212,7 +141,7 @@ export default function Header({ locale, nav }: HeaderProps) {
             ))}
           </div>
           <a
-            href="#contacto"
+            href={`/${locale}#contacto`}
             className="rounded-full bg-gradient-to-r from-gold to-bronze px-6 py-2.5 text-[13px] font-semibold text-ink transition-transform hover:scale-[1.03]"
           >
             {nav.ctaContact}
@@ -258,32 +187,7 @@ export default function Header({ locale, nav }: HeaderProps) {
         }`}
       >
         <nav className="flex h-full flex-col gap-6 overflow-y-auto px-7 pb-10 pt-24">
-          <a
-            href={primaryLinks[0].href}
-            onClick={() => setMenuOpen(false)}
-            className="font-display text-2xl font-medium text-ink"
-          >
-            {primaryLinks[0].label}
-          </a>
-
-          <div>
-            <p className="font-display text-2xl font-medium text-ink">{nav.divisions}</p>
-            <div className="mt-4 flex flex-col gap-4 border-l border-ink/10 pl-5">
-              {divisionLinks.map((d) => (
-                <a
-                  key={d.key}
-                  href={d.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-base font-medium text-ink/70"
-                >
-                  {d.label}
-                  <span className="block text-xs font-normal text-ink/45">{d.desc}</span>
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {primaryLinks.slice(1).map((link) => (
+          {primaryLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -295,7 +199,7 @@ export default function Header({ locale, nav }: HeaderProps) {
           ))}
 
           <a
-            href="#contacto"
+            href={`/${locale}#contacto`}
             onClick={() => setMenuOpen(false)}
             className="mt-2 inline-flex w-fit items-center justify-center rounded-full bg-gradient-to-r from-gold to-bronze px-7 py-3 text-sm font-semibold text-ink"
           >
