@@ -45,9 +45,6 @@ export default function Divisions({
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/5 to-transparent" />
-                <span className="absolute left-4 top-4 rounded-full bg-ink/70 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-offwhite/75 backdrop-blur-sm">
-                  {card.imageNote}
-                </span>
               </div>
 
               <div className="flex flex-1 flex-col p-7">
