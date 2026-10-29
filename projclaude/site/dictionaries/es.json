@@ -12,8 +12,8 @@
     "divisionsMobilityDesc": "Transporte pesado y flotas",
     "divisionsAgrotechDesc": "Equipamiento agrícola",
     "divisionsLineaAmarillaDesc": "Maquinaria de construcción",
-    "howWeWork": "Cómo Trabajamos",
-    "partnerships": "Alianzas Internacionales",
+    "howWeWork": "Visión Empresarial",
+    "partnerships": "Perspectiva Internacional",
     "presence": "Presencia",
     "contact": "Contacto",
     "ctaContact": "Hable con Nexport",
@@ -24,93 +24,106 @@
   },
   "hero": {
     "eyebrow": "Nexport Global C.A. · Venezuela",
-    "title": "Representamos marcas internacionales en el mercado venezolano.",
-    "subtitle": "Importación, distribución y desarrollo de negocios para equipamiento agrícola, industrial y de transporte en Venezuela.",
+    "title": "Visión global. Compromiso con Venezuela.",
+    "subtitle": "Empresa venezolana con mirada internacional, enfocada en el desarrollo de oportunidades en transporte pesado, tecnología agrícola e infraestructura, con el respaldo de un grupo empresarial con trayectoria en el país.",
     "ctaPrimary": "Hable con Nexport",
     "ctaSecondary": "Conozca nuestras divisiones",
     "imageNote": "Fotografía ilustrativa"
   },
   "about": {
     "eyebrow": "Nexport Global C.A.",
-    "title": "Conectamos fabricantes internacionales con oportunidades en Venezuela.",
-    "body": "Representamos marcas internacionales ante el comprador empresarial venezolano. Desarrollamos su presencia comercial, gestionamos la importación y distribución de sus equipos, y acompañamos la relación con el mercado local en tres sectores: agrícola, industrial y de transporte.",
+    "title": "Una empresa venezolana con visión internacional.",
+    "body": "Nexport Global C.A. es una empresa venezolana con visión internacional, enfocada en el desarrollo de oportunidades empresariales en sectores estratégicos de la economía. Nuestra identidad se construye sobre el conocimiento del entorno venezolano, una perspectiva de largo plazo y el respaldo de un grupo empresarial con experiencia real en actividades productivas y logísticas en el país. Creemos en relaciones comerciales construidas con seriedad, conocimiento del mercado y compromiso con el desarrollo sostenible de nuevas oportunidades.",
     "point1": {
-      "title": "Representación comercial",
-      "text": "Desarrollamos la presencia de fabricantes internacionales ante el comprador venezolano."
+      "title": "Visión internacional",
+      "text": "Seguimos de cerca la evolución de los sectores de transporte, agronegocio e infraestructura a nivel global."
     },
     "point2": {
-      "title": "Importación y distribución",
-      "text": "Gestionamos la importación y distribución de equipos para los sectores que atendemos."
+      "title": "Conocimiento del mercado venezolano",
+      "text": "Entendemos el entorno empresarial del país y las particularidades de sus sectores productivos."
     },
     "point3": {
-      "title": "Atención al mercado local",
-      "text": "Conocemos al comprador empresarial venezolano y construimos relaciones comerciales duraderas."
+      "title": "Respaldo de grupo",
+      "text": "Formamos parte de un grupo empresarial con experiencia operativa real en Venezuela."
     },
     "cta": "Conozca nuestras divisiones"
   },
   "divisions": {
     "eyebrow": "Nuestras Divisiones",
     "title": "Tres divisiones. Un mercado de oportunidades.",
-    "intro": "Cada división atiende un sector estratégico del mercado venezolano, con enfoque especializado y equipamiento de calidad internacional.",
+    "intro": "Cada división representa un área estratégica de interés y desarrollo empresarial dentro del mercado venezolano.",
     "mobility": {
       "title": "Nexport Mobility",
-      "text": "Transporte pesado, camiones comerciales y soluciones para flotas empresariales.",
+      "text": "Transporte pesado, flotas comerciales y soluciones para las necesidades de movilidad y logística de gran escala.",
       "cta": "Conocer Mobility",
       "imageNote": "Fotografía ilustrativa"
     },
     "agrotech": {
       "title": "Nexport Agrotech",
-      "text": "Maquinaria agrícola, irrigación y tecnología aplicada al campo.",
+      "text": "Maquinaria agrícola, sistemas de riego, agricultura de precisión y tecnologías orientadas a la productividad del sector agropecuario.",
       "cta": "Conocer Agrotech",
       "imageNote": "Fotografía ilustrativa"
     },
     "lineaAmarilla": {
       "title": "Línea Amarilla",
-      "text": "Maquinaria pesada para construcción e infraestructura.",
+      "text": "Maquinaria pesada, equipos para construcción, movimiento de tierra e infraestructura vial e industrial.",
       "cta": "Conocer Línea Amarilla",
       "imageNote": "Fotografía ilustrativa"
     }
   },
   "howWeWork": {
-    "eyebrow": "Cómo Trabajamos",
-    "title": "Tres frentes. Un mismo compromiso comercial.",
-    "intro": "Así acompañamos la relación entre fabricantes internacionales y el mercado venezolano.",
+    "eyebrow": "Visión Empresarial",
+    "title": "Los principios que guían nuestro trabajo.",
+    "intro": "Así entendemos el desarrollo de oportunidades empresariales en Venezuela.",
     "step1": {
       "number": "01",
-      "title": "Representación",
-      "text": "Representamos fabricantes internacionales ante el comprador empresarial venezolano, desarrollando su presencia en el país."
+      "title": "Conocimiento del mercado",
+      "text": "Comprensión del entorno empresarial venezolano y de las particularidades de sus sectores productivos."
     },
     "step2": {
       "number": "02",
-      "title": "Importación y distribución",
-      "text": "Gestionamos la importación y distribución de equipos para los sectores agrícola, industrial y de transporte."
+      "title": "Visión internacional",
+      "text": "Interés en tecnologías, equipos y soluciones capaces de contribuir al desarrollo de nuestros sectores estratégicos."
     },
     "step3": {
       "number": "03",
-      "title": "Relación comercial y posventa",
-      "text": "Construimos relaciones de largo plazo y acompañamos al cliente en cada etapa de la operación comercial."
+      "title": "Relaciones de largo plazo",
+      "text": "Compromiso con el desarrollo de oportunidades empresariales fundamentadas en confianza, seriedad y visión de futuro."
     }
   },
   "partnerships": {
-    "eyebrow": "Alianzas Internacionales",
-    "title": "Su próximo mercado puede comenzar en Venezuela.",
-    "body": "Si representa una marca internacional de equipamiento agrícola, industrial o de transporte, Nexport ofrece el conocimiento del mercado venezolano y la relación comercial necesaria para desarrollar su presencia en el país.",
-    "point1": "Conocimiento del comprador empresarial venezolano y sus necesidades.",
-    "point2": "Relación comercial directa con empresas de los sectores que atendemos.",
-    "point3": "Respaldo de un grupo empresarial con trayectoria operativa en Venezuela.",
-    "cta": "Explore una alianza comercial",
-    "graphicCaption": "Venezuela · Mercado internacional",
+    "eyebrow": "Perspectiva Internacional",
+    "title": "Atentos a la transformación industrial global.",
+    "body": "Seguimos de cerca la evolución de la industria internacional en transporte, agronegocio e infraestructura. Esa mirada global orienta el desarrollo de nuevas oportunidades empresariales para Nexport Global C.A. en Venezuela.",
+    "point1": "Interés en innovación y tecnologías aplicadas a nuestros sectores estratégicos.",
+    "point2": "Seguimiento constante de las transformaciones de la industria global.",
+    "point3": "Visión de crecimiento empresarial de largo plazo.",
+    "cta": "Conversemos sobre oportunidades",
+    "graphicCaption": "Venezuela · Perspectiva internacional",
     "imageNote": "Fotografía ilustrativa"
   },
   "group": {
     "eyebrow": "Nuestro Grupo Empresarial",
-    "title": "El respaldo de un grupo con trayectoria en Venezuela.",
-    "body": "Nexport Global C.A. y Agropecuaria OuroBranco C.A. pertenecen al mismo grupo empresarial venezolano. La OuroBranco cuenta con aproximadamente 30 años de experiencia en el agronegocio del país, lo que aporta a Nexport un respaldo institucional real.",
-    "clarification": "Nexport Global C.A. es la división de representación y distribución del grupo. La trayectoria agropecuaria pertenece a la operación de OuroBranco, no a Nexport como persona jurídica.",
+    "title": "El respaldo de nuestro grupo empresarial.",
+    "body": "Nexport Global C.A. forma parte de un grupo empresarial con una trayectoria de aproximadamente 30 años en Venezuela. Dentro del grupo, Agropecuaria OuroBranco C.A. ha desarrollado experiencia operativa en actividades agrícolas, almacenamiento de granos e infraestructura logística, consolidando un conocimiento práctico del entorno productivo venezolano. Esta experiencia representa un respaldo institucional para la visión empresarial de Nexport Global C.A.",
+    "clarification": "Nexport Global C.A. es la empresa del grupo orientada al desarrollo de negocios internacionales. La trayectoria agropecuaria de aproximadamente 30 años pertenece a la operación de OuroBranco, no a Nexport como persona jurídica.",
     "stat1": { "value": "~30", "label": "años de trayectoria del grupo en Venezuela" },
-    "stat2": { "value": "3", "label": "sectores de equipamiento representados" },
+    "stat2": { "value": "3", "label": "sectores estratégicos de actuación" },
     "stat3": { "value": "VE", "label": "operación con base en Venezuela" },
-    "cta": "Hablar con Nexport"
+    "cta": "Hablar con Nexport",
+    "gallery": {
+      "title": "Nuestro Grupo en Acción",
+      "subtitle": "Experiencia operativa real en Venezuela.",
+      "caption": "Operaciones reales de Agropecuaria OuroBranco C.A., empresa del mismo grupo empresarial de Nexport Global C.A.",
+      "openLabel": "Ampliar imagen",
+      "playLabel": "Reproducir video",
+      "closeLabel": "Cerrar",
+      "facility": "Infraestructura agroindustrial del grupo",
+      "silosAerial": "Vista aérea de instalaciones de almacenamiento de granos",
+      "harvest": "Operación de cosecha en campo",
+      "silosPhoto": "Instalaciones de almacenamiento de granos",
+      "fleet": "Flota de maquinaria agrícola del grupo"
+    }
   },
   "presence": {
     "eyebrow": "Presencia y Conexiones",
@@ -129,13 +142,13 @@
     "title": "Hablemos de su próximo proyecto en Venezuela.",
     "subtitle": "Cuéntenos su perfil y nuestro equipo se pondrá en contacto.",
     "manufacturerLabel": "Soy fabricante",
-    "manufacturerText": "Busco representación y distribución en Venezuela.",
+    "manufacturerText": "Quiero explorar oportunidades de negocio en Venezuela.",
     "buyerLabel": "Busco equipos",
     "buyerText": "Necesito equipamiento agrícola, industrial o de transporte."
   },
   "contact": {
-    "eyebrow": "Contacto",
-    "title": "Cuéntenos sobre su proyecto.",
+    "eyebrow": "Contacto Institucional",
+    "title": "Conversemos sobre nuevas oportunidades.",
     "subtitle": "Complete el formulario y nuestro equipo se pondrá en contacto con usted.",
     "form": {
       "name": "Nombre completo",
