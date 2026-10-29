@@ -119,7 +119,10 @@
     "venezuelaLabel": "Mercado principal",
     "venezuelaValue": "Venezuela",
     "internationalLabel": "Relación comercial",
-    "internationalValue": "Fabricantes internacionales"
+    "internationalValue": "Fabricantes internacionales",
+    "mapEyebrow": "Red comercial internacional",
+    "mapLabel": "Venezuela",
+    "mapLegend": "Relaciones comerciales"
   },
   "finalCta": {
     "eyebrow": "Hablemos",

@@ -119,7 +119,10 @@
     "venezuelaLabel": "Primary market",
     "venezuelaValue": "Venezuela",
     "internationalLabel": "Commercial relationship",
-    "internationalValue": "International manufacturers"
+    "internationalValue": "International manufacturers",
+    "mapEyebrow": "International trade network",
+    "mapLabel": "Venezuela",
+    "mapLegend": "Commercial relationships"
   },
   "finalCta": {
     "eyebrow": "Let's talk",
