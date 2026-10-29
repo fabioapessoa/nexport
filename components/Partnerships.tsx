@@ -55,9 +55,6 @@ export default function Partnerships({
               <p className="absolute inset-x-0 bottom-7 text-center text-[12px] font-semibold uppercase tracking-[0.18em] text-offwhite/90">
                 {partnerships.graphicCaption}
               </p>
-              <span className="absolute left-5 top-5 rounded bg-ink/40 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.1em] text-offwhite/85 backdrop-blur-sm">
-                {partnerships.imageNote}
-              </span>
             </div>
           </RevealOnScroll>
         </div>
