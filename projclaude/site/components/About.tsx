@@ -19,7 +19,7 @@ export default function About({ about }: { about: Dictionary["about"] }) {
               {about.body}
             </p>
             <a
-              href="#divisiones"
+              href="#experiencia"
               className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.08em] text-bronze transition-colors hover:text-ink"
             >
               {about.cta}
