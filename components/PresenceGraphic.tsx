@@ -1,63 +1,72 @@
+const ORIGIN = { x: 31.7, y: 45.5 };
+
 const CONNECTIONS = [
-  { x: 870, y: 40 },
-  { x: 980, y: 560 },
-  { x: 850, y: 1000 },
-  { x: 520, y: 1020 },
+  { x: 18, y: 22 },
+  { x: 48, y: 15 },
+  { x: 72, y: 32 },
+  { x: 80, y: 58 },
+  { x: 58, y: 68 },
 ];
 
-const ORIGIN = { x: 620, y: 420 };
+type PresenceGraphicProps = {
+  className?: string;
+  eyebrow: string;
+  label: string;
+  legend: string;
+};
 
-export default function PresenceGraphic({ className = "" }: { className?: string }) {
+export default function PresenceGraphic({ className = "", eyebrow, label, legend }: PresenceGraphicProps) {
   return (
-    <div className={`relative aspect-[1654/1479] ${className}`}>
+    <div className={`relative aspect-[800/400] overflow-hidden rounded-2xl border border-offwhite/10 bg-ink ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element -- trusted local SVG; next/image blocks SVG optimization by default */}
       <img
-        src="/media/venezuela-map.svg"
-        alt="Mapa de Venezuela"
-        className="absolute inset-0 h-full w-full object-contain"
+        src="/media/world-trade-map.svg"
+        alt="Mapa-múndi con Venezuela destacada"
+        className="absolute inset-0 h-full w-full object-cover opacity-70"
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-ink/40" />
 
       <svg
-        viewBox="0 0 1654 1479"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
         className="absolute inset-0 h-full w-full"
         aria-hidden="true"
-        fill="none"
       >
         {CONNECTIONS.map((node, i) => (
-          <path
+          <line
             key={`line-${i}`}
-            d={`M ${ORIGIN.x} ${ORIGIN.y} Q ${(ORIGIN.x + node.x) / 2} ${
-              Math.min(ORIGIN.y, node.y) - 160
-            } ${node.x} ${node.y}`}
+            x1={ORIGIN.x}
+            y1={ORIGIN.y}
+            x2={node.x}
+            y2={node.y}
             stroke="var(--color-gold)"
-            strokeOpacity="0.85"
-            strokeWidth="6"
-            strokeLinecap="round"
-          />
+            strokeWidth="0.18"
+            strokeDasharray="0.9 0.6"
+            opacity="0.55"
+          >
+            <animate attributeName="stroke-dashoffset" from="0" to="-3" dur="3.2s" repeatCount="indefinite" />
+          </line>
         ))}
-
         {CONNECTIONS.map((node, i) => (
-          <g key={`node-${i}`}>
-            <circle cx={node.x} cy={node.y} r="46" fill="var(--color-gold)" fillOpacity="0.14" />
-            <circle cx={node.x} cy={node.y} r="20" fill="var(--color-gold)" />
-            <circle cx={node.x} cy={node.y} r="20" stroke="var(--color-porcelain)" strokeWidth="5" />
-          </g>
+          <circle key={`node-${i}`} cx={node.x} cy={node.y} r="0.9" fill="var(--color-gold)" fillOpacity="0.75" />
         ))}
-
-        <circle cx={ORIGIN.x} cy={ORIGIN.y} r="16" fill="var(--color-gold)" />
-        <circle
-          cx={ORIGIN.x}
-          cy={ORIGIN.y}
-          r="34"
-          stroke="var(--color-gold)"
-          strokeWidth="5"
-          strokeOpacity="0.55"
-        />
       </svg>
 
-      <p className="absolute bottom-3 left-1/2 -translate-x-1/2 font-display text-lg font-bold uppercase tracking-[0.1em] text-ink sm:text-xl">
-        Venezuela
-      </p>
+      <div className="absolute left-5 top-5 sm:left-7 sm:top-7">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-offwhite/55 sm:text-xs">
+          {eyebrow}
+        </p>
+        <p className="mt-0.5 text-sm font-semibold uppercase tracking-[0.1em] text-gold">
+          {label}
+        </p>
+      </div>
+
+      <div className="absolute bottom-5 left-5 flex items-center gap-2 sm:bottom-7 sm:left-7">
+        <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+        <span className="text-[11px] uppercase tracking-[0.14em] text-offwhite/60 sm:text-xs">
+          {legend}
+        </span>
+      </div>
     </div>
   );
 }

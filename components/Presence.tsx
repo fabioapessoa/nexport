@@ -43,7 +43,12 @@ export default function Presence({
           </RevealOnScroll>
 
           <RevealOnScroll delay={150}>
-            <PresenceGraphic className="mx-auto w-full max-w-xl" />
+            <PresenceGraphic
+              className="w-full"
+              eyebrow={presence.mapEyebrow}
+              label={presence.mapLabel}
+              legend={presence.mapLegend}
+            />
           </RevealOnScroll>
         </div>
       </div>
