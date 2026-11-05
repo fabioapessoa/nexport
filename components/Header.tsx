@@ -91,51 +91,65 @@ export default function Header({ locale, nav }: HeaderProps) {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 bg-porcelain/95 backdrop-blur-md transition-shadow duration-300 ${
-          scrolledShadow ? "shadow-[0_1px_0_0_rgba(11,14,20,0.08)]" : ""
+        className={`fixed inset-x-0 top-0 z-50 backdrop-blur-md transition-colors duration-300 ${
+          scrolledShadow
+            ? "bg-ink/97 shadow-[0_1px_0_0_rgba(0,0,0,0.25)]"
+            : "bg-ink/80"
         }`}
       >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
         <Link
           href={`/${locale}#inicio`}
-          className="relative z-10 flex items-center"
+          className="relative z-10 flex items-center gap-3"
           aria-label="Nexport Global C.A."
         >
           <Image
-            src="/media/logo-mark.png"
-            alt="Nexport Global C.A."
-            width={1473}
-            height={841}
+            src="/media/logo-icon.png"
+            alt=""
+            width={202}
+            height={207}
             priority
-            className="h-12 w-auto sm:h-14"
+            className="h-10 w-auto sm:h-11"
           />
+          <span className="hidden flex-col leading-none sm:flex">
+            <span className="font-display text-[15px] font-semibold tracking-[0.08em] text-offwhite">
+              NEXPORT GLOBAL
+            </span>
+            <span className="mt-0.5 text-[10px] font-medium tracking-[0.3em] text-gold/90">
+              C.A.
+            </span>
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {primaryLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-[13px] font-medium tracking-[0.02em] text-ink/75 transition-colors hover:text-bronze"
+              className="group relative py-1 text-[13px] font-medium tracking-[0.03em] text-offwhite/75 transition-colors hover:text-offwhite"
             >
               {link.label}
+              <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-gold transition-transform duration-300 group-hover:scale-x-100" />
             </a>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-1 text-[12px] font-semibold tracking-wide text-ink/60 lg:flex">
+        <div className="hidden items-center gap-1 text-[12px] font-semibold tracking-wide text-offwhite/50 lg:flex">
           {locales.map((loc, i) => (
             <span key={loc} className="flex items-center gap-1">
               <Link
                 href={`/${loc}`}
-                className={`px-1 transition-colors hover:text-gold ${
+                className={`relative px-1 pb-1 transition-colors hover:text-gold ${
                   loc === locale ? "text-gold" : ""
                 }`}
                 aria-current={loc === locale ? "true" : undefined}
               >
                 {localeLabels[loc]}
+                {loc === locale && (
+                  <span className="absolute inset-x-1 -bottom-0.5 h-px bg-gold" />
+                )}
               </Link>
-              {i < locales.length - 1 && <span className="text-ink/25">/</span>}
+              {i < locales.length - 1 && <span className="text-offwhite/20">/</span>}
             </span>
           ))}
         </div>
@@ -150,17 +164,17 @@ export default function Header({ locale, nav }: HeaderProps) {
           aria-controls="mobile-menu-panel"
         >
           <span
-            className={`h-px w-6 bg-ink transition-transform duration-300 ${
+            className={`h-px w-6 bg-offwhite transition-transform duration-300 ${
               menuOpen ? "translate-y-[3.5px] rotate-45" : ""
             }`}
           />
           <span
-            className={`h-px w-6 bg-ink transition-opacity duration-300 ${
+            className={`h-px w-6 bg-offwhite transition-opacity duration-300 ${
               menuOpen ? "opacity-0" : "opacity-100"
             }`}
           />
           <span
-            className={`h-px w-6 bg-ink transition-transform duration-300 ${
+            className={`h-px w-6 bg-offwhite transition-transform duration-300 ${
               menuOpen ? "-translate-y-[5.5px] -rotate-45" : ""
             }`}
           />
@@ -174,7 +188,7 @@ export default function Header({ locale, nav }: HeaderProps) {
         role="dialog"
         aria-modal="true"
         aria-label={nav.menuLabel}
-        className={`fixed inset-0 z-40 bg-porcelain transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-ink transition-opacity duration-300 lg:hidden ${
           menuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
@@ -184,19 +198,19 @@ export default function Header({ locale, nav }: HeaderProps) {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="font-display text-2xl font-medium text-ink"
+              className="font-display text-2xl font-medium text-offwhite"
             >
               {link.label}
             </a>
           ))}
 
-          <div className="mt-auto flex items-center gap-4 border-t border-ink/10 pt-6 text-sm font-semibold tracking-wide text-ink/60">
+          <div className="mt-auto flex items-center gap-4 border-t border-offwhite/10 pt-6 text-sm font-semibold tracking-wide text-offwhite/55">
             {locales.map((loc) => (
               <Link
                 key={loc}
                 href={`/${loc}`}
                 onClick={() => setMenuOpen(false)}
-                className={loc === locale ? "text-bronze" : ""}
+                className={loc === locale ? "text-gold" : ""}
               >
                 {localeLabels[loc]}
               </Link>

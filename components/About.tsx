@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import Eyebrow from "@/components/Eyebrow";
 import type { Dictionary } from "@/lib/dictionaries";
 
 export default function About({ about }: { about: Dictionary["about"] }) {
@@ -9,10 +10,8 @@ export default function About({ about }: { about: Dictionary["about"] }) {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-14 lg:grid-cols-12">
           <RevealOnScroll className="lg:col-span-5">
-            <p className="mb-4 text-[13px] font-semibold uppercase tracking-[0.22em] text-bronze">
-              {about.eyebrow}
-            </p>
-            <h2 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+            <Eyebrow>{about.eyebrow}</Eyebrow>
+            <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
               {about.title}
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink/70">

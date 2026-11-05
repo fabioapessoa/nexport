@@ -26,15 +26,25 @@ export default function Footer({ locale, nav, footer }: FooterProps) {
   return (
     <footer className="bg-ink pt-20">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid gap-12 border-b border-offwhite/10 pb-14 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 border-b border-bronze/25 pb-14 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Image
-              src="/media/logo-mark.png"
-              alt="Nexport Global C.A."
-              width={1473}
-              height={841}
-              className="h-11 w-auto"
-            />
+            <div className="flex items-center gap-4">
+              <Image
+                src="/media/logo-icon.png"
+                alt=""
+                width={202}
+                height={207}
+                className="h-14 w-auto sm:h-16"
+              />
+              <span className="flex flex-col leading-none">
+                <span className="font-display text-xl font-semibold tracking-[0.06em] text-offwhite">
+                  NEXPORT GLOBAL
+                </span>
+                <span className="mt-1 text-xs font-medium tracking-[0.32em] text-gold/90">
+                  C.A.
+                </span>
+              </span>
+            </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-offwhite/55">
               {footer.description}
             </p>

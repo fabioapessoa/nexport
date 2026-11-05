@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import OperationsGallery, { type GalleryItem } from "@/components/OperationsGallery";
+import Eyebrow from "@/components/Eyebrow";
 import { isLocale } from "@/lib/locales";
 import { getDictionary } from "@/lib/dictionaries";
 
@@ -121,9 +122,7 @@ export default async function GalleryPage({ params }: PageProps<"/[locale]/galer
     <section className="bg-ink py-28 pt-36 sm:pt-40">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <RevealOnScroll className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-[13px] font-semibold uppercase tracking-[0.22em] text-gold">
-            {dict.gallery.eyebrow}
-          </p>
+          <Eyebrow tone="gold" align="center">{dict.gallery.eyebrow}</Eyebrow>
           <h1 className="font-display text-3xl font-semibold leading-tight text-offwhite sm:text-4xl lg:text-5xl">
             {dict.gallery.title}
           </h1>
