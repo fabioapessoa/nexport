@@ -123,29 +123,21 @@ export default function Header({ locale, nav }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 lg:flex">
-          <div className="flex items-center gap-1 text-[12px] font-semibold tracking-wide text-ink/60">
-            {locales.map((loc, i) => (
-              <span key={loc} className="flex items-center gap-1">
-                <Link
-                  href={`/${loc}`}
-                  className={`px-1 transition-colors hover:text-gold ${
-                    loc === locale ? "text-gold" : ""
-                  }`}
-                  aria-current={loc === locale ? "true" : undefined}
-                >
-                  {localeLabels[loc]}
-                </Link>
-                {i < locales.length - 1 && <span className="text-ink/25">/</span>}
-              </span>
-            ))}
-          </div>
-          <a
-            href={`/${locale}#contacto`}
-            className="rounded-full bg-gradient-to-r from-gold to-bronze px-6 py-2.5 text-[13px] font-semibold text-ink transition-transform hover:scale-[1.03]"
-          >
-            {nav.ctaContact}
-          </a>
+        <div className="hidden items-center gap-1 text-[12px] font-semibold tracking-wide text-ink/60 lg:flex">
+          {locales.map((loc, i) => (
+            <span key={loc} className="flex items-center gap-1">
+              <Link
+                href={`/${loc}`}
+                className={`px-1 transition-colors hover:text-gold ${
+                  loc === locale ? "text-gold" : ""
+                }`}
+                aria-current={loc === locale ? "true" : undefined}
+              >
+                {localeLabels[loc]}
+              </Link>
+              {i < locales.length - 1 && <span className="text-ink/25">/</span>}
+            </span>
+          ))}
         </div>
 
         <button
@@ -197,14 +189,6 @@ export default function Header({ locale, nav }: HeaderProps) {
               {link.label}
             </a>
           ))}
-
-          <a
-            href={`/${locale}#contacto`}
-            onClick={() => setMenuOpen(false)}
-            className="mt-2 inline-flex w-fit items-center justify-center rounded-full bg-gradient-to-r from-gold to-bronze px-7 py-3 text-sm font-semibold text-ink"
-          >
-            {nav.ctaContact}
-          </a>
 
           <div className="mt-auto flex items-center gap-4 border-t border-ink/10 pt-6 text-sm font-semibold tracking-wide text-ink/60">
             {locales.map((loc) => (

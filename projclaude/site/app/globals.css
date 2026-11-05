@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --color-ink: #0b0e14;
-  --color-graphite: #161b22;
-  --color-graphite-soft: #1b2029;
-  --color-steel: #3d4450;
-  --color-gold: #c9a24b;
-  --color-bronze: #8c6a2f;
-  --color-porcelain: #f6f4ef;
-  --color-offwhite: #f5f3ee;
-  --color-paper: #ffffff;
+  /* Azul Premium + Dourado — paleta institucional aprovada */
+  --color-ink: #060f1e; /* Azul Noturno */
+  --color-graphite: #0d2a4d; /* Azul Naval */
+  --color-graphite-soft: #183b6b; /* Azul Profundo */
+  --color-steel: #183b6b; /* Azul Profundo */
+  --color-gold: #d9b569; /* Dourado Claro */
+  --color-bronze: #aa7b1e; /* Dourado Bronze */
+  --color-porcelain: #f6f3e8; /* Marfim */
+  --color-offwhite: #f6f3e8; /* Marfim */
+  --color-paper: #ffffff; /* Branco */
   --color-muted: #9aa1ab;
-  --color-line: rgba(245, 243, 238, 0.12);
-  --color-line-soft: rgba(11, 14, 20, 0.1);
+  --color-line: rgba(246, 243, 232, 0.12);
+  --color-line-soft: rgba(6, 15, 30, 0.1);
 }
 
 @theme inline {
