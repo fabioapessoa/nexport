@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import Eyebrow from "@/components/Eyebrow";
 import type { Dictionary } from "@/lib/dictionaries";
 
 const icons: Record<string, ReactNode> = {
@@ -33,9 +34,7 @@ export default function ExperienceAreas({
     <section id="experiencia" className="bg-ink py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <RevealOnScroll className="max-w-2xl">
-          <p className="mb-4 text-[13px] font-semibold uppercase tracking-[0.22em] text-gold">
-            {experienceAreas.eyebrow}
-          </p>
+          <Eyebrow tone="gold">{experienceAreas.eyebrow}</Eyebrow>
           <h2 className="font-display text-3xl font-semibold leading-tight text-offwhite sm:text-4xl">
             {experienceAreas.title}
           </h2>
@@ -49,9 +48,9 @@ export default function ExperienceAreas({
             <RevealOnScroll
               key={card.key}
               delay={i * 110}
-              className="rounded-2xl border border-offwhite/10 bg-graphite-soft p-7 sm:p-8"
+              className="group rounded-2xl border border-offwhite/10 bg-graphite-soft p-7 transition-colors duration-300 hover:border-gold/35 sm:p-8"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/30">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/30 transition-colors duration-300 group-hover:border-gold/60">
                 <svg
                   width="20"
                   height="20"

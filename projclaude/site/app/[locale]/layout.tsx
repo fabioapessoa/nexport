@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Space_Grotesk, Inter, Playfair_Display } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Header from "@/components/Header";
@@ -16,6 +16,12 @@ const displayFont = Space_Grotesk({
 const sansFont = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
+});
+
+const serifFont = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["600", "700"],
 });
 
 export function generateStaticParams() {
@@ -56,7 +62,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       data-scroll-behavior="smooth"
-      className={`${displayFont.variable} ${sansFont.variable}`}
+      className={`${displayFont.variable} ${sansFont.variable} ${serifFont.variable}`}
     >
       <body className="min-h-screen bg-porcelain text-ink antialiased">
         <a

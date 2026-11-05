@@ -82,7 +82,7 @@ export default function OperationsGallery({
             type="button"
             onClick={() => setActiveIndex(i)}
             aria-label={`${item.type === "video" ? playLabel : openLabel}: ${item.alt}`}
-            className={`group relative aspect-[4/3] overflow-hidden rounded-2xl border border-ink/10 bg-graphite sm:aspect-auto ${item.span}`}
+            className={`group relative aspect-[4/3] overflow-hidden rounded-2xl border border-offwhite/10 bg-graphite transition-colors duration-300 hover:border-gold/35 sm:aspect-auto ${item.span}`}
           >
             <Image
               src={item.type === "video" ? (item.poster ?? item.src) : item.src}
@@ -128,7 +128,7 @@ export default function OperationsGallery({
               close();
             }}
             aria-label={closeLabel}
-            className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-offwhite/20"
+            className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-gold/25 hover:text-gold"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M1 1L15 15M15 1L1 15" stroke="currentColor" strokeWidth="1.5" />
@@ -144,7 +144,7 @@ export default function OperationsGallery({
                   setActiveIndex((i) => (i === null ? i : (i - 1 + items.length) % items.length));
                 }}
                 aria-label="Previous"
-                className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-offwhite/20 sm:left-6"
+                className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-gold/25 hover:text-gold sm:left-6"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M10 2L4 8L10 14" stroke="currentColor" strokeWidth="1.5" />
@@ -157,7 +157,7 @@ export default function OperationsGallery({
                   setActiveIndex((i) => (i === null ? i : (i + 1) % items.length));
                 }}
                 aria-label="Next"
-                className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-offwhite/20 sm:right-6"
+                className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-offwhite/10 text-offwhite transition-colors hover:bg-gold/25 hover:text-gold sm:right-6"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M6 2L12 8L6 14" stroke="currentColor" strokeWidth="1.5" />

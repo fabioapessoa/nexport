@@ -1,5 +1,6 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
 import GroupExperienceVideo from "@/components/GroupExperienceVideo";
+import Eyebrow from "@/components/Eyebrow";
 import type { Dictionary } from "@/lib/dictionaries";
 
 export default function GroupExperience({
@@ -14,17 +15,15 @@ export default function GroupExperience({
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <RevealOnScroll>
-            <p className="mb-4 text-[13px] font-semibold uppercase tracking-[0.22em] text-bronze">
-              {group.eyebrow}
-            </p>
-            <h2 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+            <Eyebrow>{group.eyebrow}</Eyebrow>
+            <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
               {group.title}
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink/70">
               {group.body}
             </p>
 
-            <div className="mt-9 grid grid-cols-2 gap-4 border-t border-ink/10 pt-7">
+            <div className="mt-9 grid grid-cols-2 gap-4 border-t border-bronze/20 pt-7">
               {stats.map((stat) => (
                 <div key={stat.label}>
                   <p className="font-display text-2xl font-semibold text-bronze sm:text-3xl">

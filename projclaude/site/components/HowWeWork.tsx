@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import Eyebrow from "@/components/Eyebrow";
 import type { Dictionary } from "@/lib/dictionaries";
 
 export default function HowWeWork({
@@ -12,9 +13,7 @@ export default function HowWeWork({
     <section className="bg-porcelain py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <RevealOnScroll className="max-w-2xl">
-          <p className="mb-4 text-[13px] font-semibold uppercase tracking-[0.22em] text-bronze">
-            {howWeWork.eyebrow}
-          </p>
+          <Eyebrow>{howWeWork.eyebrow}</Eyebrow>
           <h2 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
             {howWeWork.title}
           </h2>
