@@ -17,6 +17,10 @@
     "closeMenu": "Close menu",
     "menuLabel": "Menu"
   },
+  "groupBadge": {
+    "line": "Part of our business group",
+    "name": "Ouro Branco Venezuela"
+  },
   "hero": {
     "eyebrow": "Nexport Global C.A. · Venezuela",
     "title": "Experience that backs us. Vision that drives us.",
@@ -82,10 +86,13 @@
       "text": "Attention to the serious and responsible structuring of every new business opportunity."
     }
   },
+  "highlightReel": {
+    "label": "Institutional video: real operations of our business group in Venezuela"
+  },
   "group": {
     "eyebrow": "Our Business Group",
-    "title": "The backing of our business group.",
-    "body": "We are part of a business group with roughly 30 years of track record in Venezuela and experience across different productive and commercial activities. Over this track record, the group has built knowledge and experience in logistics, import, distribution, agriculture, silo infrastructure, irrigation systems, and activities connected to the oil sector. This experience represents institutional backing that strengthens our business vision and our understanding of the Venezuelan business environment.",
+    "title": "The backing of the Ouro Branco Group.",
+    "body": "We are part of the Ouro Branco Group, with roughly 30 years of track record in Venezuela and experience across different productive and commercial activities. Over this track record, the group has built knowledge and experience in logistics, import, distribution, agriculture, silo infrastructure, irrigation systems, and activities connected to the oil sector. This experience represents institutional backing that strengthens our business vision and our understanding of the Venezuelan business environment.",
     "stat1": { "value": "~30", "label": "years of the group's track record in Venezuela" },
     "stat2": { "value": "VE", "label": "operation based in Venezuela" }
   },

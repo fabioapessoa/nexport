@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import GroupExperienceVideo from "@/components/GroupExperienceVideo";
 import Eyebrow from "@/components/Eyebrow";
@@ -41,6 +42,18 @@ export default function GroupExperience({
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-ink/10 sm:aspect-[5/4]">
               <GroupExperienceVideo />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/35 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 flex items-center gap-1.5 rounded-full bg-ink/55 px-3 py-1.5 backdrop-blur-sm">
+                <Image
+                  src="/media/logo-ouro-branco-icon.png"
+                  alt=""
+                  width={400}
+                  height={400}
+                  className="h-3.5 w-auto"
+                />
+                <span className="text-[10px] font-semibold uppercase tracking-[0.1em] text-offwhite/85">
+                  Ouro Branco Venezuela
+                </span>
+              </div>
             </div>
           </RevealOnScroll>
         </div>
