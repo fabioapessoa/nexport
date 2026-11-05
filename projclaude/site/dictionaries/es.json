@@ -17,6 +17,10 @@
     "closeMenu": "Cerrar menú",
     "menuLabel": "Menú"
   },
+  "groupBadge": {
+    "line": "Parte de nuestro grupo empresarial",
+    "name": "Ouro Branco Venezuela"
+  },
   "hero": {
     "eyebrow": "Nexport Global C.A. · Venezuela",
     "title": "Experiencia que respalda. Visión que impulsa.",
@@ -82,10 +86,13 @@
       "text": "Atención a la estructuración seria y responsable de cada nueva oportunidad empresarial."
     }
   },
+  "highlightReel": {
+    "label": "Video institucional: operaciones reales de nuestro grupo empresarial en Venezuela"
+  },
   "group": {
     "eyebrow": "Nuestro Grupo Empresarial",
-    "title": "El respaldo de nuestro grupo empresarial.",
-    "body": "Formamos parte de un grupo empresarial con aproximadamente 30 años de trayectoria en Venezuela y experiencia en diferentes actividades productivas y comerciales. A lo largo de esta trayectoria, el grupo ha desarrollado conocimiento y experiencia en logística, importación, distribución, agricultura, infraestructura de silos, sistemas de riego y actividades vinculadas al sector petrolero. Esta experiencia constituye un respaldo institucional que fortalece nuestra visión de negocios y nuestro conocimiento del entorno empresarial venezolano.",
+    "title": "El respaldo del Grupo Ouro Branco.",
+    "body": "Formamos parte del Grupo Ouro Branco, con aproximadamente 30 años de trayectoria en Venezuela y experiencia en diferentes actividades productivas y comerciales. A lo largo de esta trayectoria, el grupo ha desarrollado conocimiento y experiencia en logística, importación, distribución, agricultura, infraestructura de silos, sistemas de riego y actividades vinculadas al sector petrolero. Esta experiencia constituye un respaldo institucional que fortalece nuestra visión de negocios y nuestro conocimiento del entorno empresarial venezolano.",
     "stat1": { "value": "~30", "label": "años de trayectoria del grupo en Venezuela" },
     "stat2": { "value": "VE", "label": "operación con base en Venezuela" }
   },

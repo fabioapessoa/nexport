@@ -119,7 +119,7 @@ export default async function GalleryPage({ params }: PageProps<"/[locale]/galer
   ];
 
   return (
-    <section className="bg-ink py-28 pt-36 sm:pt-40">
+    <section className="bg-ink py-28 pt-40 sm:pt-44">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <RevealOnScroll className="mx-auto max-w-2xl text-center">
           <Eyebrow tone="gold" align="center">{dict.gallery.eyebrow}</Eyebrow>

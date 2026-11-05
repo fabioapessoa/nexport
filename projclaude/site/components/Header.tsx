@@ -9,9 +9,10 @@ import type { Dictionary } from "@/lib/dictionaries";
 type HeaderProps = {
   locale: Locale;
   nav: Dictionary["nav"];
+  groupBadge: Dictionary["groupBadge"];
 };
 
-export default function Header({ locale, nav }: HeaderProps) {
+export default function Header({ locale, nav, groupBadge }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -97,10 +98,10 @@ export default function Header({ locale, nav }: HeaderProps) {
             : "bg-ink/80"
         }`}
       >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 sm:py-4">
         <Link
           href={`/${locale}#inicio`}
-          className="relative z-10 flex items-center gap-3"
+          className="relative z-10 flex items-center gap-3.5"
           aria-label="Nexport Global C.A."
         >
           <Image
@@ -109,13 +110,13 @@ export default function Header({ locale, nav }: HeaderProps) {
             width={202}
             height={207}
             priority
-            className="h-10 w-auto sm:h-11"
+            className="h-11 w-auto sm:h-12 lg:h-14"
           />
           <span className="hidden flex-col leading-none sm:flex">
-            <span className="font-display text-[15px] font-semibold tracking-[0.08em] text-offwhite">
+            <span className="font-display text-[17px] font-semibold tracking-[0.07em] text-offwhite lg:text-[19px]">
               NEXPORT GLOBAL
             </span>
-            <span className="mt-0.5 text-[10px] font-medium tracking-[0.3em] text-gold/90">
+            <span className="mt-1 text-[11px] font-medium tracking-[0.3em] text-gold/90">
               C.A.
             </span>
           </span>
@@ -179,6 +180,22 @@ export default function Header({ locale, nav }: HeaderProps) {
             }`}
           />
         </button>
+      </div>
+
+      <div className="border-t border-offwhite/8">
+        <div className="mx-auto flex max-w-7xl items-center gap-2 px-5 py-1.5 sm:px-8">
+          <Image
+            src="/media/logo-ouro-branco-icon.png"
+            alt=""
+            width={400}
+            height={400}
+            className="h-[15px] w-auto sm:h-[17px]"
+          />
+          <p className="text-[10px] uppercase tracking-[0.1em] text-offwhite/45 sm:text-[11px] sm:tracking-[0.12em]">
+            <span className="hidden sm:inline">{groupBadge.line} · </span>
+            <span className="font-semibold text-gold/75">{groupBadge.name}</span>
+          </p>
+        </div>
       </div>
       </header>
 

@@ -4,6 +4,7 @@ import About from "@/components/About";
 import ExperienceAreas from "@/components/ExperienceAreas";
 import HowWeWork from "@/components/HowWeWork";
 import GroupExperience from "@/components/GroupExperience";
+import HighlightReel from "@/components/HighlightReel";
 import Contact from "@/components/Contact";
 import { isLocale } from "@/lib/locales";
 import { getDictionary } from "@/lib/dictionaries";
@@ -21,6 +22,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <ExperienceAreas experienceAreas={dict.experienceAreas} />
       <HowWeWork howWeWork={dict.howWeWork} />
       <GroupExperience group={dict.group} />
+      <HighlightReel highlightReel={dict.highlightReel} />
       <Contact contact={dict.contact} />
     </>
   );
