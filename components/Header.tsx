@@ -178,18 +178,8 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
 
       <div className="border-t border-offwhite/8">
         <div className="mx-auto flex max-w-7xl items-center justify-end px-5 py-1.5 sm:px-8">
-          <p className="flex min-w-0 items-center gap-2 text-[10px] uppercase tracking-[0.1em] text-offwhite/45 sm:text-[11px] sm:tracking-[0.12em]">
-            <span className="hidden truncate sm:inline">{groupBadge.line}</span>
-            <span className="whitespace-nowrap sm:hidden">{groupBadge.lineShort}</span>
-            <span aria-hidden="true" className="inline-block h-3 w-px bg-offwhite/20" />
-            <Image
-              src="/media/logo-ouro-branco-icon.png"
-              alt=""
-              width={400}
-              height={400}
-              className="h-[15px] w-auto shrink-0 opacity-90 sm:h-[16px]"
-            />
-            <span className="whitespace-nowrap font-semibold text-gold/75">{groupBadge.name}</span>
+          <p className="whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.1em] text-gold/75 sm:text-[11px] sm:tracking-[0.12em]">
+            {groupBadge.line}
           </p>
         </div>
       </div>
