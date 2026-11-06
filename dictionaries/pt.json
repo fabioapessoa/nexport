@@ -18,7 +18,8 @@
     "menuLabel": "Menu"
   },
   "groupBadge": {
-    "line": "Parte do nosso grupo empresarial",
+    "line": "Parte do mesmo grupo empresarial",
+    "lineShort": "Mesmo grupo",
     "name": "Ouro Branco Venezuela"
   },
   "hero": {

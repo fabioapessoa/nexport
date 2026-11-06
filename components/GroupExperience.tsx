@@ -1,6 +1,4 @@
-import Image from "next/image";
 import RevealOnScroll from "@/components/RevealOnScroll";
-import GroupExperienceVideo from "@/components/GroupExperienceVideo";
 import Eyebrow from "@/components/Eyebrow";
 import type { Dictionary } from "@/lib/dictionaries";
 
@@ -14,49 +12,36 @@ export default function GroupExperience({
   return (
     <section id="nuestro-grupo" className="bg-paper py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid items-center gap-14 lg:grid-cols-2">
-          <RevealOnScroll>
-            <Eyebrow>{group.eyebrow}</Eyebrow>
-            <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
-              {group.title}
-            </h2>
-            <p className="mt-6 text-base leading-relaxed text-ink/70">
-              {group.body}
-            </p>
-
-            <div className="mt-9 grid grid-cols-2 gap-4 border-t border-bronze/20 pt-7">
-              {stats.map((stat) => (
-                <div key={stat.label}>
-                  <p className="font-display text-2xl font-semibold text-bronze sm:text-3xl">
-                    {stat.value}
-                  </p>
-                  <p className="mt-1 text-xs leading-snug text-ink/55">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
+        <RevealOnScroll>
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+            <div className="lg:col-span-5">
+              <Eyebrow>{group.eyebrow}</Eyebrow>
+              <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-[2.75rem] lg:leading-[1.12]">
+                {group.title}
+              </h2>
+              <span aria-hidden="true" className="mt-8 block h-px w-16 bg-bronze/60" />
             </div>
-          </RevealOnScroll>
 
-          <RevealOnScroll delay={150} className="relative">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-ink/10 sm:aspect-[5/4]">
-              <GroupExperienceVideo />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/35 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 flex items-center gap-1.5 rounded-full bg-ink/55 px-3 py-1.5 backdrop-blur-sm">
-                <Image
-                  src="/media/logo-ouro-branco-icon.png"
-                  alt=""
-                  width={400}
-                  height={400}
-                  className="h-3.5 w-auto"
-                />
-                <span className="text-[10px] font-semibold uppercase tracking-[0.1em] text-offwhite/85">
-                  Ouro Branco Venezuela
-                </span>
+            <div className="lg:col-span-7 lg:pt-10">
+              <p className="max-w-[62ch] text-base leading-[1.8] text-ink/70 sm:text-[17px]">
+                {group.body}
+              </p>
+
+              <div className="mt-12 grid max-w-xl grid-cols-2 gap-8 border-t border-bronze/20 pt-8">
+                {stats.map((stat) => (
+                  <div key={stat.label}>
+                    <p className="font-display text-3xl font-semibold text-bronze sm:text-4xl">
+                      {stat.value}
+                    </p>
+                    <p className="mt-2 text-xs leading-snug text-ink/55 sm:text-[13px]">
+                      {stat.label}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
-          </RevealOnScroll>
-        </div>
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   );
