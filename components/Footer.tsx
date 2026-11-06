@@ -30,7 +30,7 @@ export default function Footer({ locale, nav, footer }: FooterProps) {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-4">
               <Image
-                src="/media/logo-icon.png"
+                src="/media/logo-icon-official.png"
                 alt=""
                 width={202}
                 height={207}
