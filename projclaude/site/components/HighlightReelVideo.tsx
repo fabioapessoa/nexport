@@ -42,10 +42,10 @@ export default function HighlightReelVideo({ label }: { label: string }) {
       loop
       playsInline
       preload="metadata"
-      poster="/media/institutional-highlights-poster-v2.jpg"
+      poster="/media/institutional-highlights-poster-v3.jpg"
       aria-label={label}
     >
-      <source src="/media/institutional-highlights-v2.mp4" type="video/mp4" />
+      <source src="/media/institutional-highlights-v3.mp4" type="video/mp4" />
     </video>
   );
 }

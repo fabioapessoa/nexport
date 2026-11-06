@@ -105,7 +105,7 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
           aria-label="Nexport Global C.A."
         >
           <Image
-            src="/media/logo-icon.png"
+            src="/media/logo-icon-official.png"
             alt=""
             width={202}
             height={207}
