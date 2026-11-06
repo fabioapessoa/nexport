@@ -98,28 +98,22 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
             : "bg-ink/80"
         }`}
       >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 sm:py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2 sm:px-8 sm:py-2.5">
         <Link
           href={`/${locale}#inicio`}
-          className="relative z-10 flex items-center gap-3.5"
+          className="relative z-10 flex shrink-0 items-center"
           aria-label="Nexport Global C.A."
         >
           <Image
-            src="/media/logo-icon-official.png"
-            alt=""
-            width={202}
-            height={207}
+            src="/media/logo-nexport-emblem-dark.png"
+            alt="Nexport Global C.A."
+            width={806}
+            height={600}
+            quality={85}
             priority
-            className="h-11 w-auto sm:h-12 lg:h-14"
+            sizes="(min-width: 1024px) 110px, 90px"
+            className="h-[58px] w-auto sm:h-[66px] lg:h-[78px]"
           />
-          <span className="hidden flex-col leading-none sm:flex">
-            <span className="font-display text-[17px] font-semibold tracking-[0.07em] text-offwhite lg:text-[19px]">
-              NEXPORT GLOBAL
-            </span>
-            <span className="mt-1 text-[11px] font-medium tracking-[0.3em] text-gold/90">
-              C.A.
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -183,17 +177,19 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
       </div>
 
       <div className="border-t border-offwhite/8">
-        <div className="mx-auto flex max-w-7xl items-center gap-2 px-5 py-1.5 sm:px-8">
-          <Image
-            src="/media/logo-ouro-branco-icon.png"
-            alt=""
-            width={400}
-            height={400}
-            className="h-[15px] w-auto sm:h-[17px]"
-          />
-          <p className="text-[10px] uppercase tracking-[0.1em] text-offwhite/45 sm:text-[11px] sm:tracking-[0.12em]">
-            <span className="hidden sm:inline">{groupBadge.line} · </span>
-            <span className="font-semibold text-gold/75">{groupBadge.name}</span>
+        <div className="mx-auto flex max-w-7xl items-center justify-end px-5 py-1.5 sm:px-8">
+          <p className="flex min-w-0 items-center gap-2 text-[10px] uppercase tracking-[0.1em] text-offwhite/45 sm:text-[11px] sm:tracking-[0.12em]">
+            <span className="hidden truncate sm:inline">{groupBadge.line}</span>
+            <span className="whitespace-nowrap sm:hidden">{groupBadge.lineShort}</span>
+            <span aria-hidden="true" className="inline-block h-3 w-px bg-offwhite/20" />
+            <Image
+              src="/media/logo-ouro-branco-icon.png"
+              alt=""
+              width={400}
+              height={400}
+              className="h-[15px] w-auto shrink-0 opacity-90 sm:h-[16px]"
+            />
+            <span className="whitespace-nowrap font-semibold text-gold/75">{groupBadge.name}</span>
           </p>
         </div>
       </div>
@@ -209,7 +205,7 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
           menuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <nav className="flex h-full flex-col gap-6 overflow-y-auto px-7 pb-10 pt-24">
+        <nav className="flex h-full flex-col gap-6 overflow-y-auto px-7 pb-10 pt-36 sm:pt-40">
           {primaryLinks.map((link) => (
             <a
               key={link.href}
