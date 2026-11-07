@@ -176,7 +176,7 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
         </button>
       </div>
 
-      <div className="border-t border-offwhite/8">
+      <div className="hidden border-t border-offwhite/8 sm:block">
         <div className="mx-auto flex max-w-7xl items-center justify-end px-5 py-1.5 sm:px-8">
           <p className="whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.1em] text-gold/75 sm:text-[11px] sm:tracking-[0.12em]">
             {groupBadge.line}

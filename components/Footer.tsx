@@ -7,13 +7,14 @@ type FooterProps = {
   locale: Locale;
   nav: Dictionary["nav"];
   footer: Dictionary["footer"];
+  groupBadge: Dictionary["groupBadge"];
 };
 
 // Static build-time value: cacheComponents prerendering requires deterministic
 // values in the static shell, so this is set at build time rather than per-request.
 const COPYRIGHT_YEAR = 2026;
 
-export default function Footer({ locale, nav, footer }: FooterProps) {
+export default function Footer({ locale, nav, footer, groupBadge }: FooterProps) {
   const navLinks = [
     { href: `/${locale}#inicio`, label: nav.home },
     { href: `/${locale}#nexport`, label: nav.about },
@@ -39,6 +40,10 @@ export default function Footer({ locale, nav, footer }: FooterProps) {
             />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-offwhite/55">
               {footer.description}
+            </p>
+            <p className="mt-6 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-gold/80">
+              <span aria-hidden="true" className="h-px w-6 bg-gold/50" />
+              {groupBadge.line}
             </p>
           </div>
 

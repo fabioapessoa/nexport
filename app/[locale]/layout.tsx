@@ -74,7 +74,7 @@ export default async function LocaleLayout({
         <Header locale={locale} nav={dict.nav} groupBadge={dict.groupBadge} />
         <main id="site-main">{children}</main>
         <div id="site-footer">
-          <Footer locale={locale} nav={dict.nav} footer={dict.footer} />
+          <Footer locale={locale} nav={dict.nav} footer={dict.footer} groupBadge={dict.groupBadge} />
         </div>
       </body>
     </html>
