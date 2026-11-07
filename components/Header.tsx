@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { locales, localeLabels, type Locale } from "@/lib/locales";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import type { Locale } from "@/lib/locales";
 import type { Dictionary } from "@/lib/dictionaries";
 
 type HeaderProps = {
@@ -129,26 +130,8 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-1 text-[12px] font-semibold tracking-wide text-offwhite/50 lg:flex">
-          {locales.map((loc, i) => (
-            <span key={loc} className="flex items-center gap-1">
-              <Link
-                href={`/${loc}`}
-                className={`relative px-1 pb-1 transition-colors hover:text-gold ${
-                  loc === locale ? "text-gold" : ""
-                }`}
-                aria-current={loc === locale ? "true" : undefined}
-              >
-                {localeLabels[loc]}
-                {loc === locale && (
-                  <span className="absolute inset-x-1 -bottom-0.5 h-px bg-gold" />
-                )}
-              </Link>
-              {i < locales.length - 1 && <span className="text-offwhite/20">/</span>}
-            </span>
-          ))}
-        </div>
-
+        <div className="flex items-center gap-2 sm:gap-3">
+        <LanguageSwitcher locale={locale} label={nav.langLabel} />
         <button
           ref={triggerRef}
           type="button"
@@ -174,6 +157,7 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
             }`}
           />
         </button>
+        </div>
       </div>
 
       <div className="hidden border-t border-offwhite/8 sm:block">
@@ -206,19 +190,6 @@ export default function Header({ locale, nav, groupBadge }: HeaderProps) {
               {link.label}
             </a>
           ))}
-
-          <div className="mt-auto flex items-center gap-4 border-t border-offwhite/10 pt-6 text-sm font-semibold tracking-wide text-offwhite/55">
-            {locales.map((loc) => (
-              <Link
-                key={loc}
-                href={`/${loc}`}
-                onClick={() => setMenuOpen(false)}
-                className={loc === locale ? "text-gold" : ""}
-              >
-                {localeLabels[loc]}
-              </Link>
-            ))}
-          </div>
         </nav>
       </div>
     </>
