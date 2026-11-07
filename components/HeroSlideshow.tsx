@@ -23,12 +23,16 @@ const slides = [
     position: "object-[38%_58%] sm:object-[45%_58%] lg:object-[50%_58%]",
   },
   {
-    src: "/media/hero-slide-trucks.jpg",
-    position: "object-[48%_55%] sm:object-[50%_55%] lg:object-[50%_62%]",
+    src: "/media/hero-slide-welding.jpg",
+    position: "object-[50%_42%] sm:object-[50%_45%] lg:object-[50%_48%]",
   },
   {
-    src: "/media/hero-slide-tractor.jpg",
-    position: "object-[32%_55%] sm:object-[38%_55%] lg:object-[42%_58%]",
+    src: "/media/hero-slide-refinery.jpg",
+    position: "object-[50%_30%] sm:object-[50%_35%] lg:object-[50%_38%]",
+  },
+  {
+    src: "/media/hero-slide-piping.jpg",
+    position: "object-[55%_58%] sm:object-[50%_58%] lg:object-[50%_60%]",
   },
 ];
 
