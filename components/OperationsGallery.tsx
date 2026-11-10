@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type TouchEvent } from "react";
 import Image from "next/image";
+import { createPortal } from "react-dom";
 
 export type GalleryItem = {
   type: "photo" | "video";
@@ -144,7 +145,8 @@ export default function OperationsGallery({
         {caption}
       </p>
 
-      {active && (
+      {active &&
+        createPortal(
         <div
           role="dialog"
           aria-modal="true"
@@ -231,7 +233,8 @@ export default function OperationsGallery({
             )}
             <p className="text-center text-sm text-offwhite/80">{active.alt}</p>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   );
