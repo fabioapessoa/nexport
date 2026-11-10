@@ -23,66 +23,66 @@
   "hero": {
     "eyebrow": "Nexport Global C.A. · Venezuela",
     "title": "Rooted in experience. Driven by vision.",
-    "subtitle": "Nexport Global C.A. is a Venezuelan company with an international outlook, backed by a business group with roughly 30 years of experience in the country.",
+    "subtitle": "Nexport Global C.A. connects international business opportunities with the needs of Venezuela’s productive industries, drawing on local market knowledge and the experience of an established business group.",
     "imageNote": "Illustrative photograph"
   },
   "about": {
-    "eyebrow": "Nexport Global C.A.",
-    "title": "A Venezuelan company with an international outlook.",
-    "body": "Nexport Global C.A. is a Venezuelan company with an international outlook, focused on developing business opportunities and strengthening long term commercial relationships. Our identity is backed by the experience of a business group with a track record of roughly 30 years in Venezuela, with practical knowledge of productive, commercial, and logistical activities. This experience allows us to understand the particularities of the Venezuelan market and approach new projects with a solid, responsible, and forward looking business perspective.",
+    "eyebrow": "About Nexport",
+    "title": "Your connection to opportunities in Venezuela.",
+    "body": "Nexport Global C.A. is a Venezuela-based company focused on developing international business relationships across key industries.\n\nWe combine local market insight with a global perspective to identify opportunities, connect businesses, and build lasting commercial partnerships.",
     "point1": {
-      "title": "International outlook",
-      "text": "We follow the evolution of productive sectors on a global scale."
+      "title": "Local Insight",
+      "text": "Understanding Venezuela’s business environment and market opportunities."
     },
     "point2": {
-      "title": "Knowledge of the Venezuelan market",
-      "text": "We understand the country's business environment and the particularities of its productive sectors."
+      "title": "Global Perspective",
+      "text": "Connecting international capabilities with local business needs."
     },
     "point3": {
-      "title": "Group backing",
-      "text": "We are part of a business group with real operating experience in Venezuela."
+      "title": "Long-Term Focus",
+      "text": "Building relationships grounded in trust and shared objectives."
     },
     "cta": "See our areas of expertise"
   },
   "experienceAreas": {
     "eyebrow": "Areas of Expertise",
-    "title": "Practical experience across multiple business fronts.",
-    "intro": "Our business experience spans logistics, import, distribution, agricultural operations, silo infrastructure, irrigation systems, and the oil sector. The knowledge built across these areas is part of our business group's backing and our understanding of the Venezuelan market's needs.",
+    "title": "Experience across the industries that move Venezuela forward.",
+    "intro": "Our business background spans logistics, international trade, agriculture, infrastructure, and industrial activities. This broad perspective helps us understand the needs of different sectors of the Venezuelan economy.",
     "logistics": {
-      "title": "Logistics, Import, and Distribution",
-      "text": "Full command of the international and domestic logistics chain. We hold deep internal knowledge of Venezuelan law, the tax system, and customs mechanisms, allowing us to optimize tariffs and maximize fiscal efficiency in every operation. We also maintain hubs and solid international logistics experience from the United States and Brazil, designed to minimize external and internal operating costs, backed by a network of strategic partners within the country for agile, secure end to end distribution."
+      "title": "Logistics, Import & Distribution",
+      "text": "Commercial experience involving international sourcing, transportation, import activities, and distribution."
     },
     "agriculture": {
-      "title": "Agricultural Operations and Storage",
-      "text": "More than three decades of hands on experience and direct know-how in the Venezuelan countryside. We run intensive agricultural operations with advanced planting and crop management technology, backed by our own robust silo infrastructure to ensure efficiency across the agro-industrial chain."
+      "title": "Agriculture & Storage",
+      "text": "Familiarity with agricultural operations, grain storage, silos, and infrastructure supporting agricultural production."
     },
     "irrigation": {
-      "title": "Irrigation Systems",
-      "text": "Undisputed leadership in hydraulic engineering applied to agriculture. We bring proven experience in the design, installation, and management of large scale irrigation systems, including the operation and upkeep of highly complex infrastructure such as South America's largest linear irrigation pivot, spanning 300 hectares."
+      "title": "Irrigation & Agricultural Technology",
+      "text": "Experience with irrigation systems, agricultural machinery, and technologies supporting productive farming operations."
     },
     "oil": {
-      "title": "Oil Sector",
-      "text": "Solid logistical and industrial backing for the reactivation of Venezuela's oil sector. We offer strategic solutions through the rental and supply of heavy equipment, machinery, and operational support, tailored to the sector's demanding requirements in this new stage of reactivation."
+      "title": "Oil & Industrial Equipment",
+      "text": "Business experience related to heavy equipment and the operational needs of Venezuela’s oil and industrial sectors."
     }
   },
   "howWeWork": {
-    "eyebrow": "Business Vision",
-    "title": "Experience that builds trust.",
-    "intro": "This is how we understand the responsible development of business opportunities in Venezuela.",
+    "eyebrow": "Our Approach",
+    "title": "Built for meaningful business relationships.",
+    "intro": "Successful international business begins with understanding the market, identifying the right opportunities, and building relationships through clear communication and shared goals.\n\nWe focus on developing commercial connections with long-term potential.",
     "step1": {
       "number": "01",
-      "title": "Market knowledge",
-      "text": "A practical understanding of the Venezuelan business environment and its different productive sectors."
+      "title": "Understand",
+      "text": "Identify market needs and relevant business opportunities."
     },
     "step2": {
       "number": "02",
-      "title": "Operating experience",
-      "text": "Familiarity with commercial and logistical activities built over our group's track record."
+      "title": "Connect",
+      "text": "Bring international capabilities and local commercial interests together."
     },
     "step3": {
       "number": "03",
-      "title": "Responsible relationships",
-      "text": "Attention to the serious and responsible structuring of every new business opportunity."
+      "title": "Grow",
+      "text": "Develop relationships with long-term potential."
     }
   },
   "highlightReel": {
@@ -90,8 +90,8 @@
   },
   "group": {
     "eyebrow": "Our Business Group",
-    "title": "The backing of the Ouro Branco Group.",
-    "body": "We are part of the Ouro Branco Group, with roughly 30 years of track record in Venezuela and experience across different productive and commercial activities. Over this track record, the group has built knowledge and experience in logistics, import, distribution, agriculture, silo infrastructure, irrigation systems, and activities connected to the oil sector. This experience represents institutional backing that strengthens our business vision and our understanding of the Venezuelan business environment.",
+    "title": "Family roots. A long-term vision.",
+    "body": "Nexport Global C.A. is part of the Ouro Branco Group, a family business group with approximately 30 years of history in Venezuela.\n\nOver the decades, the group has developed experience in agriculture, grain storage, logistics, and other productive sectors.\n\nThis heritage provides a foundation of local market knowledge and a long-term approach to business.\n\nAs a distinct company within the group, Nexport Global focuses on developing new commercial opportunities and international connections.",
     "stat1": { "value": "~30", "label": "years of the group's track record in Venezuela" },
     "stat2": { "value": "VE", "label": "operation based in Venezuela" }
   },
@@ -121,9 +121,9 @@
     }
   },
   "contact": {
-    "eyebrow": "Institutional Contact",
-    "title": "Let's talk about new opportunities.",
-    "subtitle": "We are open to dialogue and to developing new business opportunities.",
+    "eyebrow": "Contact",
+    "title": "Let’s explore what we can build together.",
+    "subtitle": "Whether you represent an international manufacturer, a Venezuelan business, or a potential commercial partner, we welcome the opportunity to connect.",
     "form": {
       "name": "Full name",
       "company": "Company",
@@ -143,7 +143,7 @@
     }
   },
   "footer": {
-    "description": "A Venezuelan company with an international outlook, backed by a business group with real operating experience in the country.",
+    "description": "A Venezuela-based company connecting international business opportunities with the needs of the country’s productive industries.",
     "navTitle": "Navigation",
     "languageTitle": "Language",
     "legalName": "Nexport Global C.A.",

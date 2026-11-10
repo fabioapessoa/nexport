@@ -23,9 +23,11 @@ export default function GroupExperience({
             </div>
 
             <div className="lg:col-span-7 lg:pt-10">
-              <p className="max-w-[62ch] text-base leading-[1.8] text-ink/70 sm:text-[17px]">
-                {group.body}
-              </p>
+              <div className="max-w-[62ch] space-y-5 text-base leading-[1.8] text-ink/70 sm:text-[17px]">
+                {group.body.split("\n\n").map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
 
               <div className="mt-12 grid max-w-xl grid-cols-2 gap-8 border-t border-bronze/20 pt-8">
                 {stats.map((stat) => (

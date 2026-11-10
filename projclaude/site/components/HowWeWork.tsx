@@ -17,9 +17,11 @@ export default function HowWeWork({
           <h2 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
             {howWeWork.title}
           </h2>
-          <p className="mt-5 text-base leading-relaxed text-ink/65">
-            {howWeWork.intro}
-          </p>
+          <div className="mt-5 space-y-4 text-base leading-relaxed text-ink/65">
+            {howWeWork.intro.split("\n\n").map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
         </RevealOnScroll>
 
         <div className="mt-16 grid gap-10 sm:grid-cols-3 sm:gap-6">

@@ -23,66 +23,66 @@
   "hero": {
     "eyebrow": "Nexport Global C.A. · Venezuela",
     "title": "Experiencia que respalda. Visión que impulsa.",
-    "subtitle": "Nexport Global C.A. es una empresa venezolana con perspectiva internacional, respaldada por la trayectoria de un grupo empresarial con aproximadamente 30 años de experiencia en el país.",
+    "subtitle": "Nexport Global C.A. conecta oportunidades comerciales internacionales con las necesidades de los sectores productivos de Venezuela, respaldada por el conocimiento del mercado nacional y la trayectoria de un grupo empresarial con profundas raíces en el país.",
     "imageNote": "Fotografía ilustrativa"
   },
   "about": {
-    "eyebrow": "Nexport Global C.A.",
-    "title": "Una empresa venezolana con visión internacional.",
-    "body": "Nexport Global C.A. es una empresa venezolana con visión internacional, orientada al desarrollo de oportunidades empresariales y al fortalecimiento de relaciones comerciales de largo plazo. Nuestra identidad está respaldada por la experiencia de un grupo empresarial con una trayectoria de aproximadamente 30 años en Venezuela, con conocimiento práctico de actividades productivas, comerciales y logísticas. Esta experiencia nos permite comprender las particularidades del mercado venezolano y abordar nuevos proyectos con una perspectiva empresarial sólida, responsable y orientada al futuro.",
+    "eyebrow": "Quiénes Somos",
+    "title": "Conectamos oportunidades con el futuro de Venezuela.",
+    "body": "Nexport Global C.A. es una empresa venezolana orientada al desarrollo de relaciones comerciales y nuevas oportunidades de negocio en sectores estratégicos de la economía nacional.\n\nCombinamos el conocimiento del mercado venezolano con una perspectiva internacional para identificar oportunidades, acercar empresas y construir relaciones comerciales duraderas.",
     "point1": {
-      "title": "Visión internacional",
-      "text": "Seguimos de cerca la evolución de los sectores productivos a nivel global."
+      "title": "Conocimiento del mercado",
+      "text": "Entendemos las particularidades y oportunidades del entorno empresarial venezolano."
     },
     "point2": {
-      "title": "Conocimiento del mercado venezolano",
-      "text": "Entendemos el entorno empresarial del país y las particularidades de sus sectores productivos."
+      "title": "Visión internacional",
+      "text": "Conectamos capacidades y soluciones internacionales con las necesidades del mercado nacional."
     },
     "point3": {
-      "title": "Respaldo de grupo",
-      "text": "Formamos parte de un grupo empresarial con experiencia operativa real en Venezuela."
+      "title": "Relaciones a largo plazo",
+      "text": "Promovemos vínculos comerciales basados en la confianza, la comunicación y los objetivos compartidos."
     },
     "cta": "Conozca nuestras áreas de experiencia"
   },
   "experienceAreas": {
     "eyebrow": "Áreas de Experiencia",
-    "title": "Experiencia práctica en distintos frentes empresariales.",
-    "intro": "Nuestra experiencia empresarial abarca actividades logísticas, importación, distribución, operaciones agrícolas, infraestructura de silos, sistemas de riego y el sector petrolero. El conocimiento acumulado en estas áreas forma parte del respaldo de nuestro grupo empresarial y de nuestra comprensión de las necesidades del mercado venezolano.",
+    "title": "Experiencia en sectores que impulsan el desarrollo del país.",
+    "intro": "Nuestra trayectoria empresarial reúne conocimientos y experiencias vinculados con la logística, el comercio internacional, el agro, la infraestructura y las actividades industriales. Esta diversidad nos permite comprender las necesidades de distintos sectores productivos de Venezuela.",
     "logistics": {
       "title": "Logística, Importación y Distribución",
-      "text": "Dominio integral de la cadena logística internacional y nacional. Contamos con un profundo conocimiento interno de las leyes venezolanas, el sistema tributario y los mecanismos aduaneros, lo que nos permite optimizar aranceles y maximizar la eficiencia fiscal en cada operación. Asimismo, disponemos de hubs y sólida experiencia en logística internacional desde Estados Unidos y Brasil, diseñados para reducir al mínimo los costos operativos externos e internos, respaldados por una red de socios estratégicos en el territorio nacional para una distribución ágil y segura de punta a punta."
+      "text": "Experiencia comercial relacionada con el abastecimiento internacional, el transporte, las actividades de importación y la distribución."
     },
     "agriculture": {
       "title": "Actividades Agrícolas y Almacenamiento",
-      "text": "Más de tres décadas de experiencia práctica y know-how directo en el campo venezolano. Desarrollamos operaciones agrícolas intensivas con tecnología de punta en siembra y manejo de cultivos, respaldadas por una infraestructura propia y robusta de silos para garantizar la eficiencia de la cadena agroindustrial."
+      "text": "Conocimiento de las operaciones agrícolas, el almacenamiento de granos, los silos y la infraestructura que acompaña la producción del campo venezolano."
     },
     "irrigation": {
-      "title": "Sistemas de Riego",
-      "text": "Liderazgo indiscutible en ingeniería hídrica aplicada al agro. Contamos con experiencia comprobada en el diseño, instalación y gestión de sistemas de riego a gran escala, destacando la operación y manejo de infraestructura de alta complejidad como el pivote de riego linear más grande de Sudamérica, con una extensión de 300 hectáreas."
+      "title": "Sistemas de Riego y Tecnología Agrícola",
+      "text": "Experiencia vinculada con sistemas de riego, maquinaria agrícola y tecnologías destinadas a fortalecer las actividades productivas."
     },
     "oil": {
-      "title": "Sector Petrolero",
-      "text": "Sólido respaldo logístico e industrial para la reactivación del sector petrolero en Venezuela. Ofrecemos soluciones estratégicas mediante el alquiler y suministro de equipos pesados, maquinaria y soporte operativo adaptados a las altas exigencias de la industria en esta nueva etapa de reactivación."
+      "title": "Sector Petrolero y Equipamiento Industrial",
+      "text": "Conocimiento comercial de equipos pesados y de las necesidades operativas de los sectores petrolero e industrial."
     }
   },
   "howWeWork": {
     "eyebrow": "Visión Empresarial",
-    "title": "Experiencia que genera confianza.",
-    "intro": "Así entendemos el desarrollo responsable de oportunidades empresariales en Venezuela.",
+    "title": "Relaciones comerciales con visión de futuro.",
+    "intro": "Creemos que las oportunidades de negocio se construyen a partir del conocimiento del mercado, la identificación de necesidades reales y las relaciones de confianza.\n\nTrabajamos con una visión de largo plazo, buscando generar conexiones comerciales que contribuyan al desarrollo de nuevas oportunidades.",
     "step1": {
       "number": "01",
-      "title": "Conocimiento del mercado",
-      "text": "Comprensión práctica del entorno empresarial venezolano y de sus distintos sectores productivos."
+      "title": "Comprender",
+      "text": "Identificar las necesidades del mercado y las oportunidades de cada sector."
     },
     "step2": {
       "number": "02",
-      "title": "Experiencia operativa",
-      "text": "Familiaridad con actividades comerciales y logísticas desarrolladas a lo largo de la trayectoria de nuestro grupo."
+      "title": "Conectar",
+      "text": "Facilitar el acercamiento entre empresas, capacidades internacionales e intereses comerciales locales."
     },
     "step3": {
       "number": "03",
-      "title": "Relaciones responsables",
-      "text": "Atención a la estructuración seria y responsable de cada nueva oportunidad empresarial."
+      "title": "Desarrollar",
+      "text": "Construir relaciones con potencial de crecimiento y continuidad."
     }
   },
   "highlightReel": {
@@ -90,8 +90,8 @@
   },
   "group": {
     "eyebrow": "Nuestro Grupo Empresarial",
-    "title": "El respaldo del Grupo Ouro Branco.",
-    "body": "Formamos parte del Grupo Ouro Branco, con aproximadamente 30 años de trayectoria en Venezuela y experiencia en diferentes actividades productivas y comerciales. A lo largo de esta trayectoria, el grupo ha desarrollado conocimiento y experiencia en logística, importación, distribución, agricultura, infraestructura de silos, sistemas de riego y actividades vinculadas al sector petrolero. Esta experiencia constituye un respaldo institucional que fortalece nuestra visión de negocios y nuestro conocimiento del entorno empresarial venezolano.",
+    "title": "Raíces familiares. Visión de futuro.",
+    "body": "Nexport Global C.A. forma parte del Grupo Ouro Branco, un grupo empresarial de origen familiar con aproximadamente 30 años de trayectoria en Venezuela.\n\nA lo largo de estas décadas, el grupo ha desarrollado actividades en el sector agropecuario, el almacenamiento de granos, la logística y otras áreas productivas del país.\n\nEsta historia representa una base de conocimiento, experiencia y compromiso con Venezuela.\n\nComo empresa independiente dentro del grupo, Nexport Global proyecta esa visión empresarial hacia el desarrollo de nuevas relaciones comerciales y oportunidades internacionales.",
     "stat1": { "value": "~30", "label": "años de trayectoria del grupo en Venezuela" },
     "stat2": { "value": "VE", "label": "operación con base en Venezuela" }
   },
@@ -123,7 +123,7 @@
   "contact": {
     "eyebrow": "Contacto Institucional",
     "title": "Conversemos sobre nuevas oportunidades.",
-    "subtitle": "Estamos abiertos al diálogo y al desarrollo de nuevas oportunidades empresariales.",
+    "subtitle": "Si representa a un fabricante internacional, una empresa venezolana o una organización interesada en desarrollar alianzas comerciales, nos gustaría conocer su propuesta.",
     "form": {
       "name": "Nombre completo",
       "company": "Empresa",
@@ -143,7 +143,7 @@
     }
   },
   "footer": {
-    "description": "Empresa venezolana con visión internacional, respaldada por la trayectoria de un grupo empresarial con experiencia operativa real en el país.",
+    "description": "Empresa venezolana que conecta oportunidades comerciales internacionales con las necesidades de los sectores productivos del país.",
     "navTitle": "Navegación",
     "languageTitle": "Idioma",
     "legalName": "Nexport Global C.A.",
