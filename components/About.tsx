@@ -14,9 +14,11 @@ export default function About({ about }: { about: Dictionary["about"] }) {
             <h2 className="font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
               {about.title}
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-ink/70">
-              {about.body}
-            </p>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-ink/70">
+              {about.body.split("\n\n").map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
             <a
               href="#experiencia"
               className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.08em] text-bronze transition-colors hover:text-ink"
