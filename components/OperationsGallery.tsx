@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type TouchEvent } from "react";
 import Image from "next/image";
 
 export type GalleryItem = {
@@ -33,6 +33,8 @@ export default function OperationsGallery({
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const triggerRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     if (activeIndex === null) return;
@@ -55,6 +57,36 @@ export default function OperationsGallery({
       document.body.style.overflow = "";
     };
   }, [activeIndex, items.length]);
+
+  // Clicking a video thumbnail is a user gesture: start playback right away.
+  // If the browser refuses sound autoplay, retry muted; controls stay available.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (activeIndex === null || !video) return;
+    video.play().catch(() => {
+      video.muted = true;
+      video.play().catch(() => {});
+    });
+  }, [activeIndex]);
+
+  function step(direction: 1 | -1) {
+    setActiveIndex((i) => (i === null ? i : (i + direction + items.length) % items.length));
+  }
+
+  function onTouchStart(e: TouchEvent) {
+    const t = e.touches[0];
+    touchStartRef.current = { x: t.clientX, y: t.clientY };
+  }
+
+  function onTouchEnd(e: TouchEvent) {
+    const start = touchStartRef.current;
+    touchStartRef.current = null;
+    if (!start || items.length < 2) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
+  }
 
   function close() {
     const returnIndex = activeIndex;
@@ -119,6 +151,8 @@ export default function OperationsGallery({
           aria-label={active.alt}
           className="fixed inset-0 z-[60] flex items-center justify-center bg-ink/92 p-4 backdrop-blur-sm sm:p-10"
           onClick={close}
+          onTouchStart={onTouchStart}
+          onTouchEnd={onTouchEnd}
         >
           <button
             ref={closeButtonRef}
@@ -172,19 +206,26 @@ export default function OperationsGallery({
           >
             {active.type === "photo" ? (
               <Image
+                key={active.src}
                 src={active.src}
                 alt={active.alt}
                 width={active.width}
                 height={active.height}
-                className="h-auto max-h-[75vh] w-auto rounded-xl object-contain"
+                sizes="100vw"
+                quality={85}
+                priority
+                className="h-auto max-h-[75vh] max-h-[75dvh] w-auto max-w-full rounded-xl object-contain"
               />
             ) : (
               <video
+                key={active.src}
+                ref={videoRef}
                 src={active.src}
                 poster={active.poster}
                 controls
                 playsInline
-                className="max-h-[75vh] w-auto rounded-xl"
+                preload="auto"
+                className="max-h-[75vh] max-h-[75dvh] w-auto max-w-full rounded-xl bg-ink"
                 aria-label={active.alt}
               />
             )}
